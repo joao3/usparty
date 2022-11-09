@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  position: relative;
+  background-color: #820AD1;
+  width: 100%;
+  height: 14vh;
+  filter: drop-shadow(0px 7.07px 7.07px #00000050);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header > #logo {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: inline-block;
+  font-family: BioRhyme;
+  color: white;
+  font-size: 30pt;
+  margin-left: 2vw;
+  vertical-align: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+header > #searchBar {
+  position: relative;
+  display: inline-flex;  
+  margin-left: 25vw;
+  top: 27%;
+}
+
+header > #searchBar > input {
+  position: inherit;
+  width: 800px;
+  height: 51px;
+  padding-left: 20px;
+  border-radius: 15px;
+}
+
+header > #searchBar > .searchIcon {
+  position: absolute;
+  font-size: 30pt;
+  right: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+header > #searchBar > ::placeholder {
+  font-family: roboto;
+  color: #7a7a7a;
+  font-size: 18pt;
+}
+
+.accessibilityIcon {
+  position: absolute;
+  right: 12%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border-radius: 50%;
+  color: #820AD1;
+  padding: 4pt;
+
+}
+
+.carrinho {
+  position: absolute;
+  right: 7%;
+  top: 50%;
+  transform: translateY(-50%);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.login {
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#maisVendidos {
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 22px;
+  max-width: 1050px;
+}
+
+#maisVendidos > h1 {
+  margin-bottom: -56px;
+}
+
+.meio {
+  margin-left: 54px;
+  margin-right: 54px;
+}
+
+#novidades {
+  margin-top: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 22px;
+  max-width: 1050px;
+}
+
+#novidades > h1 {
+  margin-bottom: -56px;
 }
