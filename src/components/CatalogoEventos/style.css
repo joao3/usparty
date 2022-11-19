@@ -1,0 +1,19 @@
+.CatalogoEventos {
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 22px;
+  max-width: 1050px;
+}
+
+.CatalogoEventos > h1 {
+  margin-bottom: -56px;
+}
+
+.CatalogoEventos .cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
