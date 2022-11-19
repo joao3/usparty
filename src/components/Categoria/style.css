@@ -1,0 +1,19 @@
+.Categoria {
+    display: inline-block;
+    margin-left: 16px;
+    margin-right: 16px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.Categoria img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.Categoria h1 {
+    font-family: roboto;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
