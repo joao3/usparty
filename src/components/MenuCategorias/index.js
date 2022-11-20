@@ -71,11 +71,11 @@ const MenuCategorias = () => {
     return (
         <div className='MenuCategorias'>
             <div className="left" onClick={handleLeftArrow}>
-                <NavigateBeforeIcon style={{fontSize: 50}} />
+                <NavigateBeforeIcon className='arrow' style={{fontSize: 50}} />
             </div>
 
             <div className="right" onClick={handleRightArrow}>
-                <NavigateNextIcon style={{fontSize: 50}} />
+                <NavigateNextIcon className='arrow' style={{fontSize: 50}} />
             </div>
 
             <div className='listArea'>

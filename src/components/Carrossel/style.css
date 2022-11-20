@@ -25,3 +25,12 @@
 .Carrossel .right {
     right: -5%;
 }
+
+.Carrossel .arrow {
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+}
+
+.Carrossel .arrow:hover {
+    transform: scale(1);
+}

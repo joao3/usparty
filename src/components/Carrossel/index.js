@@ -1,5 +1,5 @@
 import './style.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
@@ -20,15 +20,18 @@ const Carrossel = (props) => {
     setCurrentIndex(index);
   }
 
+  
+  
+
   return (
 
     <div className='Carrossel'>
       <div className="left" onClick={handleLeftArrow}>
-        <NavigateBeforeIcon style={{ fontSize: 50 }} />
+        <NavigateBeforeIcon className='arrow' style={{ fontSize: 50 }} />
       </div>
 
       <div className="right" onClick={handleRightArrow}>
-        <NavigateNextIcon style={{ fontSize: 50 }} />
+        <NavigateNextIcon className='arrow' style={{ fontSize: 50 }} />
       </div>
 
       <div style={{
