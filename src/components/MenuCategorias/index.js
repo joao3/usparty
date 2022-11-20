@@ -66,7 +66,6 @@ const MenuCategorias = () => {
         }
         setScrollX(x);
     
-        //setScrollX(scrollX-182)
     }
 
     return (

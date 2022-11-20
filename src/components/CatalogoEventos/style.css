@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
 .CatalogoEventos {
   margin-top: 32px;
   margin-left: auto;
@@ -8,8 +10,9 @@
   max-width: 1050px;
 }
 
-.CatalogoEventos > h1 {
+.CatalogoEventos > h2 {
   margin-bottom: -56px;
+  font-size: 26px;
 }
 
 .CatalogoEventos .cards {
