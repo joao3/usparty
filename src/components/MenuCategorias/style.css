@@ -16,7 +16,7 @@
     margin-right: auto;
 }
 
-.right, .left {
+.MenuCategorias .right, .MenuCategorias .left {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -29,11 +29,11 @@
     transition: all ease 0.5s;
 }
 
-.left {
+.MenuCategorias .left {
     left: 0;
 }
 
-.right {
+.MenuCategorias .right {
     right: 0;
 }
 

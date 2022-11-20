@@ -37,3 +37,19 @@
 #novidades > h1 {
   margin-bottom: -56px;
 }
+
+.carrosselContainer {
+  width: 1200px;
+  height: 285px;
+  margin-top: 64px; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 150px;
+}
+
+.carrosselContainer h2 {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 32px;
+}

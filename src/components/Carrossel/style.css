@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+.Carrossel {
+    height: 100%;
+    position: relative;
+}
+
+.Carrossel .right, .Carrossel .left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.Carrossel .left {
+    left: -5%;
+}
+
+.Carrossel .right {
+    right: -5%;
+}
