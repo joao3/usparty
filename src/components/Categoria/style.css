@@ -11,6 +11,7 @@
 .Categoria img {
     border-radius: 50%;
     width: 150px;
+    transition: all ease 0.5s;
 }
 
 .Categoria h1 {
@@ -18,4 +19,12 @@
     font-weight: 400;
     font-size: 20px;
     text-align: center;
+}
+
+.Categoria img {
+    transform: scale(0.9);
+}
+
+.Categoria img:hover {
+    transform: scale(1);
 }

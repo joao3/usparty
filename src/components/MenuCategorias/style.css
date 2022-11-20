@@ -29,12 +29,21 @@
     transition: all ease 0.5s;
 }
 
-.MenuCategorias .left {
+.MenuCategorias .left  {
     left: 0;
 }
 
 .MenuCategorias .right {
     right: 0;
+}
+
+.MenuCategorias .arrow {
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+}
+
+.MenuCategorias .arrow:hover {
+    transform: scale(1);
 }
 
 .list {

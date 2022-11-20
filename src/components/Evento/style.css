@@ -10,26 +10,39 @@
     font-family: roboto;
     font-weight: bold;
     display: inline-block;
+    border-radius: 8px;
     margin-top: 88px;
+    cursor: pointer;
+    transition: all ease 0.2s;
 }
 
-.Evento > img {
+.Evento:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.Evento  img {
     width: 100%;
     border-radius: 8px;
 }
 
-.Evento > #data {
+.Evento  #data {
     margin-top: 21px;
     color: #820AD1;
     font-size: 18px;
 }
 
-.Evento > #titulo {
+.Evento  #titulo {
     margin-top: 7px;
     font-size: 18px;
 }
 
-.Evento > #local {
+.Evento  #local {
     font-weight: normal;
     font-size: 16px;
+}
+
+.Evento .info {
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 24px;
 }
