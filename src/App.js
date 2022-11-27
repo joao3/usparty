@@ -3,6 +3,7 @@ import Header from './components/Header';
 import CatalogoEventos from './components/CatalogoEventos';
 import MenuCategorias from './components/MenuCategorias';
 import Carrossel from './components/Carrossel';
+import Footer from './components/Footer';
 
 const App = () => {
   const banners = [
@@ -33,7 +34,11 @@ const App = () => {
 
       <CatalogoEventos label="Mais Vendidos"/>
       <CatalogoEventos label="Novidades"/>
+    
+      {/* gambiarra espaçamento */}
+      <br/> <br/> <br/> <br/>
 
+      <Footer/>
     </div>
   );
 }
