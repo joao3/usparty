@@ -20,20 +20,41 @@ const Carrossel = (props) => {
     setCurrentIndex(index);
   }
 
-  
-  
-
   return (
 
-    <div className='Carrossel'>
-      <div className="left" onClick={handleLeftArrow}>
+    <div className='Carrossel' style={{
+      height: '100%',
+      position: 'relative'
+    }}>
+      <div className="left" onClick={handleLeftArrow} style={{
+        position: "absolute",
+        top: "50%",
+        transform: "translateY(-50%)",
+        "z-index": "99",
+        display: "flex",
+        "align-items": "center",
+        "justify-content": "center",
+        overflow: "hidden",
+        cursor: "pointer",
+        transition: "all ease 0.5s"
+      }}>
         <NavigateBeforeIcon className='arrow' style={{ fontSize: 50 }} />
       </div>
 
-      <div className="right" onClick={handleRightArrow}>
+      <div className="right" onClick={handleRightArrow} style={{
+        position: "absolute",
+        top: "50%",
+        transform: "translateY(-50%)",
+        "z-index": "99",
+        display: "flex",
+        "align-items": "center",
+        "justify-content": "center",
+        overflow: "hidden",
+        cursor: "pointer",
+        transition: "all ease 0.5s"
+      }}>
         <NavigateNextIcon className='arrow' style={{ fontSize: 50 }} />
       </div>
-
       <div style={{
         width: "100%",
         height: "100%",
