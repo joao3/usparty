@@ -7,7 +7,9 @@ import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined
 const Header = () => {
   return (
     <header>
-        <div id='logo'>USParty</div>
+        <div id='logo'>
+          <a href='/'>USParty</a>
+        </div>
         
         <div id="searchBar">
           <input placeholder="Proucure um evento"/>
@@ -16,8 +18,8 @@ const Header = () => {
 
         <div id='actions'>
           <AccessibilityNewRoundedIcon className='accessibilityIcon' style={{ fontSize: 40 }}  />
-          <LocalGroceryStoreOutlinedIcon className='carrinho' fontSize='medium' style={{ fontSize: 60 }} />
-          <AccountCircleOutlinedIcon className='login' fontSize='large' style={{ fontSize: 60 }} />
+          <a href='/carrinho' ><LocalGroceryStoreOutlinedIcon className='carrinho' fontSize='medium' style={{ fontSize: 60 }} /></a>
+          <a href='/minhaconta' ><AccountCircleOutlinedIcon className='login' fontSize='large' style={{ fontSize: 60 }} /></a>
         </div>
   </header>
   );

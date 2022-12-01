@@ -1,29 +1,25 @@
 import './style.css';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 import perfil from "./assets/perfil.png";
 
 const MinhaConta = () => {
 
   return (
-    <div className="MinhaConta">
-      <Header />
-      
+    <div className="MinhaConta">    
       <div className="frame-34">
       <div className="flex-container">
         <span className="ol-jos-augusto">Olá, José Augusto</span>
         <img className="perfil" src={perfil} />
         <div className="frame-25">
-          <a href='/' className="dados-pessoais">Dados pessoais</a>
+          <a href='/minhaconta' className="dados-pessoais">Dados pessoais</a>
         </div>
         <div className="frame-29">
-          <a href='/' className="meus-cartes">Meus Cartões</a>
+          <a href='/minhaconta' className="meus-cartes">Meus Cartões</a>
         </div>
         <div className="frame-31">
-          <a href='/' className="meus-ingressos">Meus ingressos</a>
+          <a href='/meusingressos' className="meus-ingressos">Meus ingressos</a>
         </div>
         <div className="frame-32">
-          <a href='/' className="alterar-senha">Alterar Senha</a>
+          <a href='/minhaconta' className="alterar-senha">Alterar Senha</a>
         </div>
       </div>
       <div className="frame-24">
@@ -42,11 +38,9 @@ const MinhaConta = () => {
             Desejo receber notificações das nossas ofertas e novidades
           </span>
         </div>
-        <a href='/' className="alterar-dados-1">Alterar Dados</a>
+        <a href='/minhaconta' className="alterar-dados-1">Alterar Dados</a>
       </div>
     </div>
-      
-      <Footer />
     </div>
   );
 }

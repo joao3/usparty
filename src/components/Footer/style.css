@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Roboto:wght@400;700&display=swap');
-h1>#logo {
+h1>#logo>a {
+    text-decoration: none;
     position: absolute;
     top: 50%;
     transform: translate(-80%, -50%);

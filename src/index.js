@@ -7,6 +7,10 @@ import Pagamento from './pages/Pagamento';
 import Login from './pages/Login';
 import Carrinho from './pages/Carrinho';
 import Cadastrar from './pages/Cadastrar';
+import MeusIngressos from './pages/MeusIngressos';
+
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 import {
   createBrowserRouter,
@@ -35,6 +39,9 @@ const router = createBrowserRouter([
   },{
     path: "/cadastrar",
     element: <Cadastrar />,
+  },{
+    path: "/meusingressos",
+    element: <MeusIngressos />,
   }
 ]);
 
@@ -42,6 +49,8 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+      <Header />
      <RouterProvider router={router} />
+      <Footer />
   </React.StrictMode>
 );

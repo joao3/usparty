@@ -1,20 +1,15 @@
 import './style.css';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 
 
 
-const Pagamento = () => {
+const MeusIngressos = () => {
 
   return (
-    <div className="Pagamento">
-      <Header />
-      
+    <div className="MeusIngressos">
 
-      
-      <Footer />
+
     </div>
   );
 }
 
-export default Pagamento;
+export default MeusIngressos;

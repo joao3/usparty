@@ -1,9 +1,8 @@
 import "./style.css";
-import Header from "../../components/Header";
 import CatalogoEventos from "../../components/CatalogoEventos";
 import MenuCategorias from "../../components/MenuCategorias";
 import Carrossel from "../../components/Carrossel";
-import Footer from "../../components/Footer";
+
 
 const Home = () => {
   const banners = [
@@ -23,7 +22,6 @@ const Home = () => {
 
   return (
     <div className="App">
-      <Header />
       <MenuCategorias />
       <div className="carrosselContainer">
         <h2>Destaques</h2>''
@@ -32,7 +30,6 @@ const Home = () => {
       <CatalogoEventos label="Mais Vendidos" />
       <CatalogoEventos label="Novidades" />
 
-      <Footer />
     </div>
   );
 };

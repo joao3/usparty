@@ -17,7 +17,7 @@ const Footer = () => {
         <Row>
             <Column>
         <h1>
-            <div id='logo'>USParty</div>
+        <div id='logo'><a href='/'>USParty</a></div>
         </h1>
             </Column>
             <Column>
