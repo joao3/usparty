@@ -11,7 +11,7 @@ import {
   
 const Footer = () => {
   return (
-    <Box>
+    <Box className="footerbox">
 
       <Container>
         <Row>

@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import MinhaConta from './pages/MinhaConta/MinhaConta';
-import DetalheEvento from './pages/DetalheEvento/DetalheEvento';
+import Home from './pages/Home';
+import MinhaConta from './pages/MinhaConta/index';
+import DetalheEvento from './pages/DetalheEvento';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/*<DetalheEvento />*/}
     {/*<MinhaConta />*/}
-    <App />
+    <Home />
   </React.StrictMode>
 );

@@ -1,13 +1,13 @@
-import './DetalheEvento.css';
+import './style.css';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
 
 
-const DetalheEvento = () => {
+const Cadastrar = () => {
 
   return (
-    <div className="DetalheEvento">
+    <div className="Cadastrar">
       <Header />
       
 
@@ -17,4 +17,4 @@ const DetalheEvento = () => {
   );
 }
 
-export default DetalheEvento;
+export default Cadastrar;

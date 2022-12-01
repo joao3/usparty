@@ -1,13 +1,13 @@
-import './MinhaConta.css';
+import './style.css';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
 
 
-const MinhaConta = () => {
+const DetalheEvento = () => {
 
   return (
-    <div className="MinhaConta">
+    <div className="DetalheEvento">
       <Header />
       
 
@@ -17,4 +17,4 @@ const MinhaConta = () => {
   );
 }
 
-export default MinhaConta;
+export default DetalheEvento;
