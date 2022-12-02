@@ -1,11 +1,10 @@
 import "./style.css";
 import CatalogoEventos from "../../components/CatalogoEventos";
-import CatalogoEventos_novidades from "../../components/CatalogoEventos_novidades";
 import MenuCategorias from "../../components/MenuCategorias";
 import Carrossel from "../../components/Carrossel";
 
 
-const Home = () => {
+const Home = (props) => {
   const banners = [
     {
       imagem: require("../../imgs/banner.jpg"),
@@ -28,8 +27,8 @@ const Home = () => {
         <h2>Destaques</h2>
         <Carrossel banners={banners} />
       </div>
-      <CatalogoEventos label="Mais Vendidos" />
-      <CatalogoEventos_novidades label="Novidades" />
+      <CatalogoEventos label="Mais Vendidos" eventos={props.eventos.slice(6, 12)}/>
+      <CatalogoEventos label="Novidades" eventos={props.eventos.slice(0, 6)}/>
 
     </div>
   );

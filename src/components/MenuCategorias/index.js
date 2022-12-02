@@ -59,10 +59,13 @@ const MenuCategorias = () => {
     }
 
     const handleRightArrow = () => {
-        let x = scrollX - Math.round(900 / 2);
+        let listAreaWidth = window.innerWidth * 0.805;
+        listAreaWidth = listAreaWidth > 900 ? 900 : listAreaWidth;
+
+        let x = scrollX - Math.round(listAreaWidth / 2);
         let listW = categorias.length * 182;
-        if (900 - listW > x) {
-            x = 900 - listW ;
+        if (listAreaWidth - listW > x) {
+            x = listAreaWidth - listW ;
         }
         setScrollX(x);
     
