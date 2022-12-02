@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
+html {
+    font-family: roboto;
+    font-size: 16px;
+}
+
+.bio-rhyme {
+    font-family: BioRhyme;
 }

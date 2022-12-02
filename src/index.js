@@ -1,3 +1,4 @@
+import './global.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from './pages/Home';
@@ -8,49 +9,47 @@ import Login from './pages/Login';
 import Carrinho from './pages/Carrinho';
 import Cadastrar from './pages/Cadastrar';
 import MeusIngressos from './pages/MeusIngressos';
-
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import { Wrapper } from './components/Wrapper';
+import { useAuth } from './context/Auth';
 
 import {
   createBrowserRouter,
-  RouterProvider
+  RouterProvider,
+  Navigate,
+  useLocation
 } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: Wrapper(<Home />),
   },{
     path: "/minhaconta",
-    element: <MinhaConta />,
+    element: Wrapper(<MinhaConta />),
   },{
     path: "/pagamento",
-    element: <Pagamento />,
+    element: Wrapper(<Pagamento />),
   },{
     path: "/login",
-    element: <Login />,
+    element: Wrapper(<Login />),
   },{
     path: "/detalheevento",
-    element: <DetalheEvento />,
+    element: Wrapper(<DetalheEvento />),
   },{
     path: "/carrinho",
-    element: <Carrinho />,
+    element: Wrapper(<Carrinho />),
   },{
     path: "/cadastrar",
-    element: <Cadastrar />,
+    element: Wrapper(<Cadastrar />),
   },{
     path: "/meusingressos",
-    element: <MeusIngressos />,
+    element: Wrapper(<MeusIngressos />),
   }
 ]);
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <Header />
-     <RouterProvider router={router} />
-      <Footer />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
