@@ -24,8 +24,8 @@ const Home = () => {
   return (
     <div className="App">
       <MenuCategorias />
-      <div className="carrosselContainer">
-        <h2>Destaques</h2>''
+      <div className="carrosselContainer" >
+        <h2>Destaques</h2>
         <Carrossel banners={banners} />
       </div>
       <CatalogoEventos label="Mais Vendidos" />

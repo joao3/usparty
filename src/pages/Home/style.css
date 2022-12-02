@@ -39,7 +39,8 @@
 }
 
 .carrosselContainer {
-  width: 1200px;
+  width: 80.5vw;
+  max-width: 1200px;
   height: 285px;
   margin-top: 64px; 
   margin-left: auto;
