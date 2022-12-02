@@ -1,5 +1,6 @@
 import "./style.css";
 import CatalogoEventos from "../../components/CatalogoEventos";
+import CatalogoEventos_novidades from "../../components/CatalogoEventos_novidades";
 import MenuCategorias from "../../components/MenuCategorias";
 import Carrossel from "../../components/Carrossel";
 
@@ -28,7 +29,7 @@ const Home = () => {
         <Carrossel banners={banners} />
       </div>
       <CatalogoEventos label="Mais Vendidos" />
-      <CatalogoEventos label="Novidades" />
+      <CatalogoEventos_novidades label="Novidades" />
 
     </div>
   );
