@@ -1,5 +1,7 @@
 import './style.css';
-import perfil from "./assets/perfil.png";
+//import perfil from "./assets/perfil.png";
+import perfil from "./assets/jose.png";
+
 
 const MinhaConta = () => {
 
@@ -24,14 +26,23 @@ const MinhaConta = () => {
       </div>
       <div className="frame-24">
         <span className="editar-perfil">Editar perfil</span>
-        <span className="nome">Nome</span>
+        <div className="flex-container-2">
+        <span className="nome">Nome:</span>
         <input defaultValue="José Augusto" className="rectangle-36" type="text" />
-        <span className="telefone">Telefone</span>
-        <input defaultValue="16988887777" className="rectangle-36-1" type="text" />
-        <span className="email">Email</span>
-        <input defaultValue="joseaugusto@email.com" className="rectangle-36-2" type="text" />
-        <span className="cpf">CPF</span>
-        <input defaultValue="12345678909" className="rectangle-36-3" type="text" />
+        </div>
+        <div className="flex-container-2">
+        <span className="telefone">Telefone:</span>
+        <input defaultValue="(16)98888-7777" className="rectangle-36" type="text" />
+        </div>
+        <div className="flex-container-2">
+          <span className="email">Email:</span>
+        <input defaultValue="joseaugusto@email.com" className="rectangle-36" type="text" />
+        </div>
+        <div className="flex-container-2">
+          <span className="cpf">CPF:</span>
+        <input defaultValue="123.456.789-09" className="rectangle-36" type="text" />
+        </div>
+
         <div className="flex-container-1">
           <input className="checksize" type="checkbox" />
           <span className="desejo-receber-notif">
