@@ -10,7 +10,7 @@ const CatalogoEventos = (props) => {
 
       <div className='cards'>
       
-      {props.eventos.map(evento => <Evento titulo={evento.titulo} imagem={evento.imagem} data={evento.data} local={evento.local} alt={evento.alt_imagem}  /> )}
+      {props.eventos.map(evento => <Evento evento={evento}  /> )}
       
       </div>
     </section>
