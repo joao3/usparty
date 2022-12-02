@@ -4,3 +4,35 @@
   margin: 0;
   padding: 0;
 }
+
+.up {
+  margin-top: 64px;
+  max-width: 1200px;
+  width:80.5vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.up img {
+  max-width: 100%;
+  border-radius: 8pt;
+}
+
+#imgContainer {
+  width: 600px;
+}
+
+#descricao  {
+  margin-top: 64px;
+  max-width: 1200px;
+  width:80.5vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#descricao p {
+  margin-top: 1em; margin-bottom: 1em; 
+}
