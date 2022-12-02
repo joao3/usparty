@@ -4,3 +4,12 @@
   margin: 0;
   padding: 0;
 }
+.termos {
+  align-self: flex-end;
+  margin-left: 40px;
+}
+
+.checksize{
+transform: scale(2);
+padding: 30px;
+}
