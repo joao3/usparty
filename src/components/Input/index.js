@@ -38,7 +38,7 @@ const Input = (props) => {
         return (
             <>
                 {props.label && <Label htmlFor={props.fieldId}>{props.label}</Label>}
-                <Field placeholder={props.placeholder} id={props.fieldId} type={props.type? props.type : "text"}></Field>
+                <Field value={props.value} defaultValue={props.defaultValue} placeholder={props.placeholder} id={props.fieldId} type={props.type? props.type : "text"}></Field>
             </>
         );
     }
