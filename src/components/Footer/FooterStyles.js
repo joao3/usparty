@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-   
+
 export const Box = styled.div`
   padding: 80px 60px;
   background: #581485;
@@ -12,23 +12,25 @@ export const Box = styled.div`
     padding: 70px 30px;
   }
 `;
-   
+
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
+    flex-warp: wrap;
     justify-content: center;
     max-width: 1000px;
+    width: 52vw;
     margin: 0 auto;
-    /* background: red; */
 `
-   
+
 export const Column = styled.div`
+  width: 180px;
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-left: 60px;
+  margin-left: 0px;
 `;
-   
+
 export const Row = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, 
@@ -40,7 +42,7 @@ export const Row = styled.div`
                            minmax(200px, 1fr));
   }
 `;
-   
+
 export const FooterLink = styled.a`
   color: #fff;
   margin-bottom: 20px;
@@ -52,7 +54,7 @@ export const FooterLink = styled.a`
       transition: 200ms ease-in;
   }
 `;
-   
+
 export const Heading = styled.p`
   font-size: 24px;
   color: #fff;
