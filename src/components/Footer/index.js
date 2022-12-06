@@ -8,24 +8,28 @@ import {
   FooterLink,
   Heading,
 } from "./FooterStyles";
-  
+
 const Footer = () => {
   return (
     <Box className="footerbox">
 
       <Container>
         <Row>
-            <Column>
-        <h1>
-        <div id='logo'><a href='/'>USParty</a></div>
-        </h1>
-            </Column>
-            <Column>
+          <Column style={{"marginBottom": "16px"}}>
+            <div id='logo'><a style={{
+
+              "color": "white",
+              "fontSize": "30pt",
+              "fontFamily": "BioRhyme",
+              "textDecoration": "none"
+            }} href='/'>USParty</a></div>
+          </Column>
+          <Column>
             <Heading>Sobre nós</Heading>
             <FooterLink href="#">Quem somos</FooterLink>
-            <FooterLink href="#">Politica de privacidade</FooterLink>          
-            </Column>
-        
+            <FooterLink href="#">Politica de privacidade</FooterLink>
+          </Column>
+
           <Column>
             <Heading>Suporte</Heading>
             <FooterLink href="#">Fale Conosco</FooterLink>

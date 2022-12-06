@@ -44,7 +44,7 @@ const Header = () => {
         </div>
         
         <div id="searchBar">
-          <input placeholder="Proucure um evento"/>
+          <input placeholder="Procure um evento"/>
           <SearchIcon className='searchIcon'/>
         </div>
 

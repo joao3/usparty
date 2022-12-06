@@ -1,17 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Roboto:wght@400;700&display=swap');
-h1>#logo>a {
-    text-decoration: none;
-    position: absolute;
-    top: 50%;
-    transform: translate(-80%, -50%);
-    display: inline-block;
-    font-family: BioRhyme;
-    color: white;
-    font-size: 30pt;
-    margin-left: 2vw;
-    vertical-align: auto;
-  }
 
-  .footerbox{
-    margin-top: 50px;
-  }
+.footerbox {
+  margin-top: 50px;
+}
