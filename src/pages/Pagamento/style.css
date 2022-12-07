@@ -4,3 +4,73 @@
   margin: 0;
   padding: 0;
 }
+
+
+.Pagamento .itens {
+  max-width: 1200px;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.Pagamento .total {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 32px;
+  max-width: 1200px;
+  width: 80vw;
+  margin: 16px auto;
+}
+
+.Pagamento .formaPagamento {
+  max-width: 1200px;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+label.box{
+  background: white;
+  margin-top: 12px;
+  padding: 10px 12px;
+  display: flex;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.432);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+#pix:checked ~ label.first ,
+#boleto:checked ~ label.second ,
+#cartao:checked ~ label.third {
+  border-color: #820AD1;
+  border-width: 2px;
+}
+
+#pix:checked ~ label.first .circle,
+#boleto:checked ~ label.second .circle,
+#cartao:checked ~ label.third .circle{
+  border-color: #820AD1;
+  background: #fff;
+
+}
+
+label.box .metodoText{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+label.box .circle{
+  height: 22px;
+  width: 22px;
+  background: #ccc;
+  border: 5px solid transparent;
+  display: inline-block;
+  margin-right: 15px;
+  border-radius: 50%;
+  transition: all 0.25s ease;
+  box-shadow: inset -4px -4px 10px rgba(0, 0, 0, 0.2);
+}

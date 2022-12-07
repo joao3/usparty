@@ -1,6 +1,7 @@
 import ItemNoCarrinho from '../../components/ItemNoCarrinho';
 import './style.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Carrinho = (props) => {
   const [carrinho, setCarrinho] = useState(JSON.parse(localStorage.getItem("carrinho")));
@@ -60,7 +61,7 @@ const Carrinho = (props) => {
     <div className="Carrinho">
       <h1 style={{
         "textAlign": "center",
-        "fontWeight": "normal",
+        "fontWeight": "bold",
         "marginTop": "32px",
         "marginBottom": "32px",
         "fontSize": "32pt"
@@ -69,6 +70,14 @@ const Carrinho = (props) => {
       {(carrinho && carrinho.itens.length > 0) ? <>
 
         <div className='itens'>
+          <h2 style={{
+              "fontSize": "28px",
+              "fontWeight": "bold"
+              
+          }}>
+            Itens
+          </h2>
+
           <hr />
           {carrinho && carrinho.itens.map(item =>
             <div key={item.evento.path}>
@@ -86,27 +95,30 @@ const Carrinho = (props) => {
             Total: R$ {carrinho && carrinho.total.toFixed(2).replace('.', ',')}
           </div>
 
-          <div className='botao' style={{
-            "width": "250px",
-            "height": "80px",
-            "textAlign": "center",
-            "padding": " 20px",
-            "borderRadius": "15px",
-            "marginBottom": " 0",
-            "marginTop": " 24px",
-            "background": " linear-gradient(90.83deg, #6801AB 6.97%, #B10DC7 52.42%, #BD0ECC 97.88%)",
-            "borderColor": " transparent",
-            "color": "white",
-            "fontWeight": "700",
-            "fontSize": "32px",
-            "cursor": "pointer",
-          }}>
-            Continuar
-          </div>
+
+          <Link to='/pagamento' className='link'>
+            <div className='botao' style={{
+              "width": "250px",
+              "height": "80px",
+              "textAlign": "center",
+              "padding": " 20px",
+              "borderRadius": "15px",
+              "marginBottom": " 0",
+              "marginTop": " 24px",
+              "background": " linear-gradient(90.83deg, #6801AB 6.97%, #B10DC7 52.42%, #BD0ECC 97.88%)",
+              "borderColor": " transparent",
+              "color": "white",
+              "fontWeight": "700",
+              "fontSize": "32px",
+              "cursor": "pointer",
+            }}>
+              Continuar
+            </div>
+          </Link>
         </div></> : <h2 style={{
           "fontWeight": "normal",
           "textAlign": "center",
-          
+
         }}>Seu carrinho está vazio</h2>}
     </div>
   );
