@@ -2,8 +2,7 @@ import "./style.css";
 import CatalogoEventos from "../../components/CatalogoEventos";
 import MenuCategorias from "../../components/MenuCategorias";
 import Carrossel from "../../components/Carrossel";
-import { Container } from '../../components/Container';
-
+import { Container } from "../../components/Container";
 
 const Home = (props) => {
   const banners = [
@@ -24,11 +23,14 @@ const Home = (props) => {
   return (
     <Container>
       <MenuCategorias />
-      <div className="carrosselContainer" >
+      <div className="carrosselContainer">
         <h2>Destaques</h2>
         <Carrossel banners={banners} />
       </div>
-      <CatalogoEventos label="Mais Vendidos" eventos={props.eventos.slice(0, 6)} />
+      <CatalogoEventos
+        label="Mais Vendidos"
+        eventos={props.eventos.slice(0, 6)}
+      />
       <CatalogoEventos label="Novidades" eventos={props.eventos.slice(6, 12)} />
     </Container>
   );

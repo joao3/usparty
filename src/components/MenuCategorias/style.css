@@ -1,55 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
 .listArea {
-    margin-top: 64px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    overflow-x: hidden;
+  margin-top: 64px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  overflow-x: hidden;
 }
 
 .MenuCategorias {
-    max-width: 1000px;
-    width: 80.5vw;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1000px;
+  width: 80.5vw;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.MenuCategorias .right, .MenuCategorias .left {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 99;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    cursor: pointer;
-    transition: all ease 0.5s;
+.MenuCategorias .right,
+.MenuCategorias .left {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all ease 0.5s;
 }
 
-.MenuCategorias .left  {
-    left: 0;
+.MenuCategorias .left {
+  left: 0;
 }
 
 .MenuCategorias .right {
-    right: 0;
+  right: 0;
 }
 
 .MenuCategorias .arrow {
-    transform: scale(0.9);
-    transition: all ease 0.2s;
+  transform: scale(0.9);
+  transition: all ease 0.2s;
 }
 
 .MenuCategorias .arrow:hover {
-    transform: scale(1);
+  transform: scale(1);
 }
 
 .list {
-    display: flex;
-    margin-left: 0px;
-    justify-content: space-around;
-    transition: all ease 0.5s;
+  display: flex;
+  margin-left: 0px;
+  justify-content: space-around;
+  transition: all ease 0.5s;
 }

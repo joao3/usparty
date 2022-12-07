@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -30,7 +30,12 @@
   font-size: 32px;
 }
 
-.link, .link :focus, .link:hover, .link:visited, .link:link, .link:active {
+.link,
+.link :focus,
+.link:hover,
+.link:visited,
+.link:link,
+.link:active {
   text-decoration: none;
   color: white;
 }

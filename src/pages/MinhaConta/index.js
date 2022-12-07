@@ -2,69 +2,77 @@ import "./style.css";
 import perfil from "./assets/jose.png";
 import styled from "styled-components";
 import Input from "../../components/Input";
-import { Link, Navigate } from 'react-router-dom';
+import { Link, Navigate } from "react-router-dom";
 import { useAuth } from "../../context/Auth";
 
 const Container = styled.form`
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-    height: 95%;
-    background-color: var(--light);
-    border-radius: 15px;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-self: center;
-    align-items: stretch;
-    margin-top: 6px;
-    margin-bottom: 1px;
-    padding-bottom: 60px;
-    padding-top: 6px;
-    padding-left: 46px;
-    padding-right: 46px;
-    font-family: Roboto;
-    font-size: 2.5rem;
-    line-height: 48px;
-    display: flex;
-    box-shadow: 10px 10px 10px -10px rgba(0,0,0,1);
-  
-    input[type=submit] {
-        padding: 20px;
-        margin-bottom: 0;
-        margin-top: 24px;
-        background: linear-gradient(90.83deg, #6801AB 6.97%, #B10DC7 52.42%, #BD0ECC 97.88%);
-        border-color: transparent;
-        color: white;
-        font-weight: 700;
-        font-size: 32px;
-        cursor: pointer;
-    }
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  height: 95%;
+  background-color: var(--light);
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-self: center;
+  align-items: stretch;
+  margin-top: 6px;
+  margin-bottom: 1px;
+  padding-bottom: 60px;
+  padding-top: 6px;
+  padding-left: 46px;
+  padding-right: 46px;
+  font-family: Roboto;
+  font-size: 2.5rem;
+  line-height: 48px;
+  display: flex;
+  box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 1);
 
+  input[type="submit"] {
+    padding: 20px;
+    margin-bottom: 0;
+    margin-top: 24px;
+    background: linear-gradient(
+      90.83deg,
+      #6801ab 6.97%,
+      #b10dc7 52.42%,
+      #bd0ecc 97.88%
+    );
+    border-color: transparent;
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+    cursor: pointer;
+  }
 `;
 const Container2 = styled.form`
-    max-width: 400px;
-    margin: 0 auto;
+  max-width: 400px;
+  margin: 0 auto;
 
-  
-    input[type=profileoption] {
-      text-align: center;
-      padding: 20px;
-      margin-bottom: 0;
-      margin-top: 24px;
-      background: linear-gradient(90.83deg, #6801AB 6.97%, #B10DC7 52.42%, #BD0ECC 97.88%);
-      border-color: transparent;
-      color: white;
-      font-weight: 700;
-      font-size: 32px;
-      cursor: pointer;
-      opacity: 0.6;
-      pointer-events: none;
+  input[type="profileoption"] {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
+    margin-top: 24px;
+    background: linear-gradient(
+      90.83deg,
+      #6801ab 6.97%,
+      #b10dc7 52.42%,
+      #bd0ecc 97.88%
+    );
+    border-color: transparent;
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+    cursor: pointer;
+    opacity: 0.6;
+    pointer-events: none;
   }
 `;
 const MinhaConta = () => {
-  const auth = useAuth()
+  const auth = useAuth();
 
-  if(!auth.signed) return <Navigate to="/login"/>
+  if (!auth.signed) return <Navigate to="/login" />;
 
   return (
     <div className="MinhaConta">
@@ -73,9 +81,13 @@ const MinhaConta = () => {
           <span className="nome_usuario">Olá, José Augusto</span>
           <img className="perfil" src={perfil} />
           <Container2>
-          <Link to='/minhaconta'><Input type="profileoption" value="Dados pessoais" /></Link>
+            <Link to="/minhaconta">
+              <Input type="profileoption" value="Dados pessoais" />
+            </Link>
             <Input type="profileoption" value="Meus Cartões" />
-            <Link to='/meusingressos'><Input type="profileoption" value="Meus ingressos" /></Link>
+            <Link to="/meusingressos">
+              <Input type="profileoption" value="Meus ingressos" />
+            </Link>
             <Input type="profileoption" value="Alterar Senha" />
           </Container2>
         </div>

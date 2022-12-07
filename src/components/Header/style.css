@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
-
-header>#logo>a {
+header > #logo > a {
   text-decoration: none;
   position: absolute;
   top: 50%;
@@ -13,13 +12,13 @@ header>#logo>a {
   vertical-align: auto;
 }
 
-header>#searchBar {
+header > #searchBar {
   position: relative;
   display: inline-flex;
   margin-left: 25vw;
 }
 
-header>#searchBar>input {
+header > #searchBar > input {
   position: inherit;
   width: 42vw;
   height: 51px;
@@ -27,7 +26,7 @@ header>#searchBar>input {
   border-radius: 15px;
 }
 
-header>#searchBar>.searchIcon {
+header > #searchBar > .searchIcon {
   position: absolute;
   font-size: 30pt;
   right: 1%;
@@ -35,7 +34,7 @@ header>#searchBar>.searchIcon {
   transform: translateY(-50%);
 }
 
-header>#searchBar> ::placeholder {
+header > #searchBar > ::placeholder {
   font-family: roboto;
   color: #7a7a7a;
   font-size: 18pt;
