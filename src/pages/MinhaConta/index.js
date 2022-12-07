@@ -2,7 +2,8 @@ import "./style.css";
 import perfil from "./assets/jose.png";
 import styled from "styled-components";
 import Input from "../../components/Input";
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
+import { useAuth } from "../../context/Auth";
 
 const Container = styled.form`
     max-width: 600px;
@@ -61,6 +62,10 @@ const Container2 = styled.form`
   }
 `;
 const MinhaConta = () => {
+  const auth = useAuth()
+
+  if(!auth.signed) return <Navigate to="/login"/>
+
   return (
     <div className="MinhaConta">
       <div className="frame">

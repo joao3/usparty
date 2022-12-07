@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import Input from '../Input';
 import { useAuth } from '../../context/Auth';
-import { redirect } from 'react-router-dom';
-
 
 const Container = styled.form`
     max-width: 600px;
@@ -19,6 +17,11 @@ const Container = styled.form`
         font-weight: 700;
         font-size: 32px;
         cursor: pointer;
+    }
+
+    @media (max-width: 767px) {
+        padding: 0 32px;
+        box-sizing: border-box;
     }
 `;
 const termos = styled.form`
@@ -45,8 +48,6 @@ const LoginForm = (props) => {
         auth.Login({email: "exemplo@email.com"})
         event.preventDefault()
     }
-
-    console.log(auth, auth.signed)
 
     return (
         <Container onSubmit={(event) => handleSubmit(event)}>
