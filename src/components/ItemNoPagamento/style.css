@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.ItemNoPagamento {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.ItemNoPagamento > .imagem {
+    max-width: 380px;
+
+}
+
+.ItemNoPagamento > .imagem > img {
+    max-width: 100%;
+    border-radius: 16px;
+}
+
+#titular {
+    width: 21vw;
+    min-width: 300px;
+    max-width: 400px;
+}
