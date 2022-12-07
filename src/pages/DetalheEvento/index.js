@@ -3,8 +3,27 @@ import './style.css';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LocalGroceryStoreOutlinedIcon from '@mui/icons-material/LocalGroceryStoreOutlined';
+import { Link } from 'react-router-dom';
 
 const DetalheEvento = (props) => {
+  const handleAdicionar = () => {
+    
+    let carrinho = JSON.parse(localStorage.getItem("carrinho"));
+
+    if (!carrinho) {
+      carrinho = {"total": 0.0, "itens": []};
+    }
+    
+    if (carrinho.itens.length == 0 || !carrinho.itens.find(e => e.evento.path == props.evento.path)) {
+      carrinho.itens.push({
+        "evento": props.evento,
+        "quantidade": 1
+      });
+      carrinho.total += props.evento.valor;
+    }
+    
+    localStorage.setItem("carrinho", JSON.stringify(carrinho));
+  }
 
   return (
     <div className='DetalheEvento'>
@@ -25,21 +44,23 @@ const DetalheEvento = (props) => {
           <h2 style={{ "marginTop": "16px", "fontSize": "28pt" }}>R$ {props.evento.valor.toFixed(2).replace('.', ',')}</h2>
 
 
-          <div style={{
-            "textAlign": "center",
-            "padding": " 20px",
-            "borderRadius": "15px",
-            "marginBottom": " 0",
-            "marginTop": " 24px",
-            "background": " linear-gradient(90.83deg, #6801AB 6.97%, #B10DC7 52.42%, #BD0ECC 97.88%)",
-            "borderColor": " transparent",
-            "color": "white",
-            "fontWeight": "700",
-            "fontSize": "32px",
-            "cursor": "pointer",
-          }}>
-            <LocalGroceryStoreOutlinedIcon /> Adicionar
-          </div>
+          <Link className='link' to='/carrinho'>
+            <div onClick={handleAdicionar} style={{
+              "textAlign": "center",
+              "padding": " 20px",
+              "borderRadius": "15px",
+              "marginBottom": " 0",
+              "marginTop": " 24px",
+              "background": " linear-gradient(90.83deg, #6801AB 6.97%, #B10DC7 52.42%, #BD0ECC 97.88%)",
+              "borderColor": " transparent",
+              "color": "white",
+              "fontWeight": "700",
+              "fontSize": "32px",
+              "cursor": "pointer",
+            }}>
+              <LocalGroceryStoreOutlinedIcon /> Adicionar
+            </div>
+          </Link>
         </div>
 
 

@@ -10,7 +10,6 @@ import Carrinho from './pages/Carrinho';
 import Cadastrar from './pages/Cadastrar';
 import MeusIngressos from './pages/MeusIngressos';
 import { Wrapper } from './components/Wrapper';
-import { useAuth } from './context/Auth';
 
 import {
   createBrowserRouter,
@@ -146,25 +145,25 @@ let routes = [
   {
     path: "/",
     element: Wrapper(<Home eventos={eventos} />),
-  },{
+  }, {
     path: "/minhaconta",
     element: Wrapper(<MinhaConta />),
-  },{
+  }, {
     path: "/pagamento",
     element: Wrapper(<Pagamento />),
-  },{
+  }, {
     path: "/login",
     element: Wrapper(<Login />),
-  },{
+  }, {
     path: "/detalheevento",
     element: Wrapper(<DetalheEvento />),
-  },{
+  }, {
     path: "/carrinho",
-    element: Wrapper(<Carrinho />),
-  },{
+    element: Wrapper(<Carrinho eventos={eventos} />),
+  }, {
     path: "/cadastrar",
     element: Wrapper(<Cadastrar />),
-  },{
+  }, {
     path: "/meusingressos",
     element: Wrapper(<MeusIngressos />),
   }

@@ -36,3 +36,8 @@
 #descricao p {
   margin-top: 1em; margin-bottom: 1em; 
 }
+
+.link, .link :focus, .link:hover, .link:visited, .link:link, .link:active {
+  text-decoration: none;
+  color: white;
+}
