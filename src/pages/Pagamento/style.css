@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
 }
-
 
 .Pagamento .itens {
   max-width: 1200px;
@@ -27,11 +26,11 @@
   margin: 0 auto;
 }
 
-input[type="radio"]{
+input[type="radio"] {
   display: none;
 }
 
-label.box{
+label.box {
   background: white;
   margin-top: 12px;
   padding: 10px 12px;
@@ -42,28 +41,27 @@ label.box{
   transition: all 0.25s ease;
 }
 
-#pix:checked ~ label.first ,
-#boleto:checked ~ label.second ,
+#pix:checked ~ label.first,
+#boleto:checked ~ label.second,
 #cartao:checked ~ label.third {
-  border-color: #820AD1;
+  border-color: #820ad1;
   border-width: 2px;
 }
 
 #pix:checked ~ label.first .circle,
 #boleto:checked ~ label.second .circle,
-#cartao:checked ~ label.third .circle{
-  border-color: #820AD1;
+#cartao:checked ~ label.third .circle {
+  border-color: #820ad1;
   background: #fff;
-
 }
 
-label.box .metodoText{
+label.box .metodoText {
   display: flex;
   width: 100%;
   align-items: center;
 }
 
-label.box .circle{
+label.box .circle {
   height: 22px;
   width: 22px;
   background: #ccc;

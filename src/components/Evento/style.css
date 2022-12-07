@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -6,48 +6,53 @@
 }
 
 .Evento {
-    width: 313.54px;
-    font-family: roboto;
-    font-weight: bold;
-    display: inline-block;
-    border-radius: 8px;
-    margin-top: 88px;
-    cursor: pointer;
-    transition: all ease 0.2s;
+  width: 313.54px;
+  font-family: roboto;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 8px;
+  margin-top: 88px;
+  cursor: pointer;
+  transition: all ease 0.2s;
 }
 
 .Evento:hover {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.Evento  img {
-    width: 100%;
-    border-radius: 8px;
+.Evento img {
+  width: 100%;
+  border-radius: 8px;
 }
 
-.Evento  #data {
-    margin-top: 21px;
-    color: #820AD1;
-    font-size: 18px;
+.Evento #data {
+  margin-top: 21px;
+  color: #820ad1;
+  font-size: 18px;
 }
 
-.Evento  #titulo {
-    margin-top: 7px;
-    font-size: 18px;
+.Evento #titulo {
+  margin-top: 7px;
+  font-size: 18px;
 }
 
-.Evento  #local {
-    font-weight: normal;
-    font-size: 16px;
+.Evento #local {
+  font-weight: normal;
+  font-size: 16px;
 }
 
 .Evento .info {
-    margin-left: 8px;
-    margin-right: 8px;
-    margin-bottom: 24px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 24px;
 }
 
-#link, #link :focus, #link:hover, #link:visited, #link:link, #link:active {
-        text-decoration: none;
-        color: black;
+#link,
+#link :focus,
+#link:hover,
+#link:visited,
+#link:link,
+#link:active {
+  text-decoration: none;
+  color: black;
 }

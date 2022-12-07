@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Box = styled.div`
   padding: 80px 60px;
@@ -6,22 +6,21 @@ export const Box = styled.div`
   position: absolute;
   bottom: 1;
   width: 100%;
-  
-   
+
   @media (max-width: 1000px) {
     padding: 70px 30px;
   }
 `;
 
 export const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    flex-warp: wrap;
-    justify-content: center;
-    max-width: 1000px;
-    width: 52vw;
-    margin: 0 auto;
-`
+  display: flex;
+  flex-direction: column;
+  flex-warp: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  width: 52vw;
+  margin: 0 auto;
+`;
 
 export const Column = styled.div`
   width: 180px;
@@ -33,13 +32,11 @@ export const Column = styled.div`
 
 export const Row = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, 
-                         minmax(185px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
   grid-gap: 20px;
-   
+
   @media (max-width: 1000px) {
-    grid-template-columns: repeat(auto-fill, 
-                           minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 `;
 
@@ -48,10 +45,10 @@ export const FooterLink = styled.a`
   margin-bottom: 20px;
   font-size: 18px;
   text-decoration: none;
-   
+
   &:hover {
-      color: black;
-      transition: 200ms ease-in;
+    color: black;
+    transition: 200ms ease-in;
   }
 `;
 

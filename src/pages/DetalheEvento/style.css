@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -8,7 +8,7 @@
 .up {
   margin-top: 64px;
   max-width: 1200px;
-  width:80.5vw;
+  width: 80.5vw;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -25,19 +25,25 @@
   width: 600px;
 }
 
-#descricao  {
+#descricao {
   margin-top: 64px;
   max-width: 1200px;
-  width:80.5vw;
+  width: 80.5vw;
   margin-left: auto;
   margin-right: auto;
 }
 
 #descricao p {
-  margin-top: 1em; margin-bottom: 1em; 
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
-.link, .link :focus, .link:hover, .link:visited, .link:link, .link:active {
+.link,
+.link :focus,
+.link:hover,
+.link:visited,
+.link:link,
+.link:active {
   text-decoration: none;
   color: white;
 }

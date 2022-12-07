@@ -1,30 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
 .Categoria {
-    display: inline-block;
-    margin-left: 16px;
-    margin-right: 16px;
-    width: 150px;
-    cursor: pointer;
+  display: inline-block;
+  margin-left: 16px;
+  margin-right: 16px;
+  width: 150px;
+  cursor: pointer;
 }
 
 .Categoria img {
-    border-radius: 50%;
-    width: 150px;
-    transition: all ease 0.5s;
+  border-radius: 50%;
+  width: 150px;
+  transition: all ease 0.5s;
 }
 
 .Categoria h1 {
-    font-family: roboto;
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
 }
 
 .Categoria img {
-    transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 .Categoria img:hover {
-    transform: scale(1);
+  transform: scale(1);
 }

@@ -1,18 +1,18 @@
-import './style.css'
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import SearchIcon from '@mui/icons-material/Search';
-import AccessibilityNewRoundedIcon from '@mui/icons-material/AccessibilityNewRounded';
-import LocalGroceryStoreOutlinedIcon from '@mui/icons-material/LocalGroceryStoreOutlined';
-import AccountIcon from '@mui/icons-material/Person';
-import LoginIcon from '@mui/icons-material/Login';
-import { useAuth } from '../../context/Auth';
-import { useState } from 'react';
+import "./style.css";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import SearchIcon from "@mui/icons-material/Search";
+import AccessibilityNewRoundedIcon from "@mui/icons-material/AccessibilityNewRounded";
+import LocalGroceryStoreOutlinedIcon from "@mui/icons-material/LocalGroceryStoreOutlined";
+import AccountIcon from "@mui/icons-material/Person";
+import LoginIcon from "@mui/icons-material/Login";
+import { useAuth } from "../../context/Auth";
+import { useState } from "react";
 
 const HeaderWrapper = styled.header`
   position: fixed;
   top: 0;
-  background-color: #820AD1;
+  background-color: #820ad1;
   width: 100%;
   box-sizing: border-box;
   min-height: 120px;
@@ -46,14 +46,13 @@ const MenuWrapper = styled.div`
     left: 0;
     max-height: 0;
     overflow: hidden;
-    background-color: #820AD1;
+    background-color: #820ad1;
     filter: drop-shadow(0px 7.07px 7.07px #00000050);
     width: 100%;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 
     &.open {
       max-height: 80px;
@@ -81,12 +80,12 @@ const Icon = styled.span`
   margin: 0 10px;
   position: relative;
   cursor: pointer;
-  
+
   svg {
     position: absolute;
     top: 8px;
     left: 8px;
-    fill: #820AD1;
+    fill: #820ad1;
     width: 40px;
     height: 40px;
   }
@@ -112,14 +111,16 @@ const MenuMobileIcon = styled.span`
 
   &.open {
     transform: rotate(45deg);
-  
-    &::after, &::before {
+
+    &::after,
+    &::before {
       transform: rotate(90deg);
       top: 0;
     }
   }
 
-  &::after, &::before {
+  &::after,
+  &::before {
     content: "";
     display: block;
     width: 30px;
@@ -135,40 +136,56 @@ const MenuMobileIcon = styled.span`
   &::after {
     top: 10px;
   }
-
-
 `;
 
 const Header = () => {
-  let [menuOpen, setMenuOpen] = useState(false)
-  let auth = useAuth()
-  console.log(auth, menuOpen)
+  let [menuOpen, setMenuOpen] = useState(false);
+  let auth = useAuth();
+  console.log(auth, menuOpen);
 
   return (
     <HeaderWrapper>
-        <div id='logo'>
-          <Link to='/'>USParty</Link>
-        </div>
-        
-        <div id="searchBar">
-          <input placeholder="Procure um evento"/>
-          <SearchIcon className='searchIcon'/>
-        </div>
+      <div id="logo">
+        <Link to="/">USParty</Link>
+      </div>
 
-        <MenuMobileButton tabIndex={0} aria-labelledby='Abrir menu' onClick={() => setMenuOpen(!menuOpen)}>
-          <MenuMobileIcon className={menuOpen && "open"} />
-        </MenuMobileButton>
-        <MenuWrapper className={menuOpen && "open"} id='actions'>
-          <Icon tabIndex={0} aria-labelledby='Opções de Acessibilidade'><AccessibilityNewRoundedIcon className='icon accessibilityIcon'/></Icon>
-          <Link to='/carrinho' ><Icon><LocalGroceryStoreOutlinedIcon className='icon carrinho'/></Icon></Link>
-          {auth.signed? 
-            <Link to='/minhaconta' ><Icon><AccountIcon className='icon conta'/></Icon></Link>
-          :
-            <Link to='/login' ><Icon><LoginIcon className='icon login'/></Icon></Link>
-          }
-        </MenuWrapper>
-  </HeaderWrapper>
+      <div id="searchBar">
+        <input placeholder="Procure um evento" />
+        <SearchIcon className="searchIcon" />
+      </div>
+
+      <MenuMobileButton
+        tabIndex={0}
+        aria-labelledby="Abrir menu"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        <MenuMobileIcon className={menuOpen && "open"} />
+      </MenuMobileButton>
+      <MenuWrapper className={menuOpen && "open"} id="actions">
+        <Icon tabIndex={0} aria-labelledby="Opções de Acessibilidade">
+          <AccessibilityNewRoundedIcon className="icon accessibilityIcon" />
+        </Icon>
+        <Link to="/carrinho">
+          <Icon>
+            <LocalGroceryStoreOutlinedIcon className="icon carrinho" />
+          </Icon>
+        </Link>
+        {auth.signed ? (
+          <Link to="/minhaconta">
+            <Icon>
+              <AccountIcon className="icon conta" />
+            </Icon>
+          </Link>
+        ) : (
+          <Link to="/login">
+            <Icon>
+              <LoginIcon className="icon login" />
+            </Icon>
+          </Link>
+        )}
+      </MenuWrapper>
+    </HeaderWrapper>
   );
-}
+};
 
 export default Header;
