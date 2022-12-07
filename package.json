@@ -1,7 +1,6 @@
 {
   "name": "usparty",
   "version": "0.1.0",
-  "homepage": "http://joao3.github.io/usparty",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
