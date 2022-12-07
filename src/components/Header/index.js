@@ -21,7 +21,7 @@ const HeaderWrapper = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 0 64px;
-  z-index: 10;
+  z-index: 100;
 
   @media (max-width: 767px) {
     padding: 0 32px;

@@ -13,9 +13,7 @@ import { Wrapper } from './components/Wrapper';
 
 import {
   createBrowserRouter,
-  RouterProvider,
-  Navigate,
-  useLocation
+  RouterProvider
 } from "react-router-dom";
 
 const eventos = [

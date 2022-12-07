@@ -2,7 +2,7 @@ import "./style.css";
 import CatalogoEventos from "../../components/CatalogoEventos";
 import MenuCategorias from "../../components/MenuCategorias";
 import Carrossel from "../../components/Carrossel";
-import { useAuth } from "../../context/Auth";
+import { Container } from '../../components/Container';
 
 
 const Home = (props) => {
@@ -22,7 +22,7 @@ const Home = (props) => {
   ];
 
   return (
-    <div className="App">
+    <Container>
       <MenuCategorias />
       <div className="carrosselContainer" >
         <h2>Destaques</h2>
@@ -30,8 +30,7 @@ const Home = (props) => {
       </div>
       <CatalogoEventos label="Mais Vendidos" eventos={props.eventos.slice(0, 6)} />
       <CatalogoEventos label="Novidades" eventos={props.eventos.slice(6, 12)} />
-
-    </div>
+    </Container>
   );
 };
 
