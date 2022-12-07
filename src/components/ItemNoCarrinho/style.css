@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+.ItemNoCarrinho {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.ItemNoCarrinho > .imagem {
+    max-width: 380px;
+
+}
+
+.ItemNoCarrinho > .imagem > img {
+    max-width: 100%;
+    border-radius: 16px;
+}
+
+.info {
+    margin-left: 16px;
+}
+
+.info > .quantidade {
+    margin-top: 16px;
+}
+
+.info > .removerCarrinho {
+    display: inline-block;
+    text-decoration: underline;
+    color: #0A6FFE;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.info > .removerCarrinho:active {
+    color: black;
+}
+
+.valor {
+    font-size: 22pt;
+    font-weight: bold;
+    margin-left: auto;
+    margin-top: 64px;
+}

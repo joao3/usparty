@@ -4,3 +4,28 @@
   margin: 0;
   padding: 0;
 }
+
+.Carrinho {
+  margin: 32px auto;
+}
+
+.Carrinho .itens {
+  max-width: 1200px;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.Carrinho .bottom {
+  max-width: 1200px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+  width: 80vw;
+  margin: 32px auto;
+}
+
+.Carrinho .bottom .total {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 32px;
+}

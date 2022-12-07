@@ -2,6 +2,7 @@ import "./style.css";
 import CatalogoEventos from "../../components/CatalogoEventos";
 import MenuCategorias from "../../components/MenuCategorias";
 import Carrossel from "../../components/Carrossel";
+import { useAuth } from "../../context/Auth";
 
 
 const Home = (props) => {
@@ -27,8 +28,8 @@ const Home = (props) => {
         <h2>Destaques</h2>
         <Carrossel banners={banners} />
       </div>
-      <CatalogoEventos label="Mais Vendidos" eventos={props.eventos.slice(0, 6)}/>
-      <CatalogoEventos label="Novidades" eventos={props.eventos.slice(6, 12)}/>
+      <CatalogoEventos label="Mais Vendidos" eventos={props.eventos.slice(0, 6)} />
+      <CatalogoEventos label="Novidades" eventos={props.eventos.slice(6, 12)} />
 
     </div>
   );
