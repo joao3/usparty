@@ -1,10 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
-header > #logo > a {
+header > #logo {
   text-decoration: none;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
   display: inline-block;
   font-family: BioRhyme;
   color: white;
@@ -15,7 +12,7 @@ header > #logo > a {
 header > #searchBar {
   position: relative;
   display: inline-flex;
-  margin-left: 25vw;
+  margin-left: 10px;
 }
 
 header > #searchBar > input {

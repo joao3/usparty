@@ -39,6 +39,7 @@ const MenuWrapper = styled.div`
   filter: none;
   width: auto;
   display: block;
+  min-width: 228px;
 
   @media (max-width: 767px) {
     position: absolute;
@@ -145,9 +146,7 @@ const Header = () => {
 
   return (
     <HeaderWrapper>
-      <div id="logo">
-        <Link to="/">USParty</Link>
-      </div>
+      <Link id="logo" to="/">USParty</Link>
 
       <div id="searchBar">
         <input placeholder="Procure um evento" />
