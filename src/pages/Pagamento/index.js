@@ -34,7 +34,7 @@ const Pagamento = () => {
         >
           Finalizar Compra
         </h1>
-  
+
         {carrinho && carrinho.itens.length > 0 ? (
           <>
             <div className="itens">
@@ -55,9 +55,9 @@ const Pagamento = () => {
                   </div>
                 ))}
             </div>
-  
-  
-  
+
+
+
             <div className="formaPagamento">
               <h2
                 style={{
@@ -68,13 +68,13 @@ const Pagamento = () => {
               >
                 Método de Pagamento
               </h2>
-  
+
               <div className="content">
                 <div className="radioPagamento">
                   <input type="radio" id="pix" name="formaPagamento"></input>
                   <input type="radio" id="boleto" name="formaPagamento"></input>
                   <input type="radio" id="cartao" name="formaPagamento"></input>
-  
+
                   <label htmlFor="pix" className="box first">
                     <div className="metodoText">
                       <span className="circle"></span>
@@ -96,18 +96,18 @@ const Pagamento = () => {
                       <span className="text">Cartão</span>
                     </div>
                   </label>
-  
-  
+
+
                 </div>
                 <div className="total">
                   Total: R$ {carrinho && carrinho.total.toFixed(2).replace(".", ",")}
                 </div>
-  
+
               </div>
-  
+
             </div>
             <Link className="link" to="/concluido">
-              <div
+              <div onClick={() => localStorage.setItem("carrinho", JSON.stringify({ total: 0.0, itens: [] }))}
                 style={{
                   textAlign: "center",
                   padding: " 20px",
