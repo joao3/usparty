@@ -5,6 +5,14 @@
   padding: 0;
 }
 
+.Pagamento {
+  @media (max-width: 767px) {
+    padding-top: 70px;
+  }
+
+  padding-top: 120px;
+}
+
 .Pagamento .itens {
   max-width: 1200px;
   width: 80vw;
@@ -41,16 +49,16 @@ label.box {
   transition: all 0.25s ease;
 }
 
-#pix:checked ~ label.first,
-#boleto:checked ~ label.second,
-#cartao:checked ~ label.third {
+#pix:checked~label.first,
+#boleto:checked~label.second,
+#cartao:checked~label.third {
   border-color: #820ad1;
   border-width: 2px;
 }
 
-#pix:checked ~ label.first .circle,
-#boleto:checked ~ label.second .circle,
-#cartao:checked ~ label.third .circle {
+#pix:checked~label.first .circle,
+#boleto:checked~label.second .circle,
+#cartao:checked~label.third .circle {
   border-color: #820ad1;
   background: #fff;
 }
