@@ -47,6 +47,7 @@ label.box {
   border: 2px solid rgba(0, 0, 0, 0.432);
   cursor: pointer;
   transition: all 0.25s ease;
+  max-width: 300px;
 }
 
 #pix:checked~label.first,

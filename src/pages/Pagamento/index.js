@@ -1,7 +1,9 @@
 import "./style.css";
 import { useState } from "react";
 import ItemNoPagamento from "../../components/ItemNoPagamento/indedx";
-
+import CreditCardIcon from '@mui/icons-material/CreditCard';
+import PixIcon from '@mui/icons-material/Pix';
+import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
 const Pagamento = () => {
   const [carrinho, setCarrinho] = useState(
     JSON.parse(localStorage.getItem("carrinho"))
@@ -65,30 +67,21 @@ const Pagamento = () => {
               <label htmlFor="pix" className="box first">
                 <div className="metodoText">
                   <span className="circle"></span>
-                  <img
-                    src="https://logospng.org/download/pix/logo-pix-icone-256.png"
-                    style={{ maxHeight: "20px", marginRight: "16px" }}
-                  ></img>
+                  <PixIcon style={{"marginRight": "8px"}} />
                   <span className="text">Pix</span>
                 </div>
               </label>
               <label htmlFor="boleto" className="box second">
                 <div className="metodoText">
                   <span className="circle"></span>
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/25/25350.png"
-                    style={{ maxHeight: "20px", marginRight: "16px" }}
-                  ></img>
+                  <ReceiptLongIcon style={{"marginRight": "8px"}} />
                   <span className="text">Boleto</span>
                 </div>
               </label>
               <label htmlFor="cartao" className="box third">
                 <div className="metodoText">
                   <span className="circle"></span>
-                  <img
-                    src="https://cdn.icon-icons.com/icons2/510/PNG/512/card_icon-icons.com_50439.png"
-                    style={{ maxHeight: "20px", marginRight: "16px" }}
-                  ></img>
+                  <CreditCardIcon style={{"marginRight": "8px"}} />
                   <span className="text">Cartão</span>
                 </div>
               </label>
