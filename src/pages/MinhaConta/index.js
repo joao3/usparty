@@ -46,7 +46,7 @@ const Container = styled.form`
   }
 `;
 const Container2 = styled.form`
-  max-width: 400px;
+  max-width: 600px;
   margin: 0 auto;
 
   input[type="profileoption"] {
