@@ -15,9 +15,8 @@
   font-family: Roboto;
   font-weight: bold;
   font-size: 32px;
-  max-width: 1200px;
-  width: 80vw;
-  margin: 16px auto;
+  margin-top: auto;
+  margin-bottom: 16px;
 }
 
 .Pagamento .formaPagamento {
@@ -39,18 +38,20 @@ label.box {
   border: 2px solid rgba(0, 0, 0, 0.432);
   cursor: pointer;
   transition: all 0.25s ease;
+  max-width: 300px;
+  min-width: 150px;
 }
 
-#pix:checked ~ label.first,
-#boleto:checked ~ label.second,
-#cartao:checked ~ label.third {
+#pix:checked~label.first,
+#boleto:checked~label.second,
+#cartao:checked~label.third {
   border-color: #820ad1;
   border-width: 2px;
 }
 
-#pix:checked ~ label.first .circle,
-#boleto:checked ~ label.second .circle,
-#cartao:checked ~ label.third .circle {
+#pix:checked~label.first .circle,
+#boleto:checked~label.second .circle,
+#cartao:checked~label.third .circle {
   border-color: #820ad1;
   background: #fff;
 }
@@ -71,4 +72,27 @@ label.box .circle {
   border-radius: 50%;
   transition: all 0.25s ease;
   box-shadow: inset -4px -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.link,
+.link :focus,
+.link:hover,
+.link:visited,
+.link:link,
+.link:active {
+  text-decoration: none;
+  color: white;
+}
+
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.radioPagamento {
+  margin-bottom: 16px;
+  display: inline-block;
+  min-width: 300px;
 }

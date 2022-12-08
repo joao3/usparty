@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Concluido {
+    text-align: center;
+}
+
+.Concluido #link {
+    text-decoration: underline;
+    color: #820AD1;
+
+    cursor: pointer;
+}
