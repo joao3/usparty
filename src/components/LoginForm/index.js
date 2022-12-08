@@ -29,16 +29,9 @@ const Container = styled.form`
     box-sizing: border-box;
   }
 `;
-const termos = styled.form`
-align-self: flex-end;
-margin-left: 40px;
-font-size: 60px;
-}
-`;
-const termos2 = styled.form`
-align-self: flex-end;
-font-size: 60px;
-}
+
+const To_create_acount = styled.form`
+  font-size: 2rem;
 `;
 
 const lock = (
@@ -77,10 +70,12 @@ const LoginForm = (props) => {
         label="Senha"
       />
       <Input type="submit" value="Enviar" />
-      <span className="termos">Não tem conta? </span>
-      <a className="termos2" href="/cadastrar">
-        Cadastre-se.
-      </a>
+
+      <To_create_acount>
+        <span>Não tem conta? </span>
+        <a href="/cadastrar">Cadastre-se.</a>
+      </To_create_acount>
+    
     </Container>
   );
 };

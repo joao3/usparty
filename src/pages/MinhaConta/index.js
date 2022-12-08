@@ -84,11 +84,15 @@ const MinhaConta = () => {
             <Link to="/minhaconta">
               <Input type="profileoption" value="Dados pessoais" />
             </Link>
+            <Link to="/minhaconta">
             <Input type="profileoption" value="Meus Cartões" />
-            <Link to="/meusingressos">
+            </Link>
+            <Link to="/minhaconta">
               <Input type="profileoption" value="Meus ingressos" />
             </Link>
+            <Link to="/minhaconta">
             <Input type="profileoption" value="Alterar Senha" />
+            </Link>
           </Container2>
         </div>
         <Container>

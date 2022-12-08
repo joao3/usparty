@@ -21,6 +21,7 @@ const Container = styled.form`
   padding-top: 6px;
   padding-left: 46px;
   padding-right: 46px;
+  margin-top: 150px;
   font-family: Roboto;
   font-size: 1.5rem;
   line-height: 48px;
@@ -44,16 +45,11 @@ const Container = styled.form`
     cursor: pointer;
   }
 `;
-const Cadastro = styled.form`
-
-  }`;
 const Cadastrar = () => {
   return (
-    <div className="Cadastro">
+
       <Container>
-        <br />
-        <h1>Cadastrar nova conta</h1>
-        <br />
+        <h1 className="criar_conta">Criar conta</h1>
         <Input placeholder="Nome Completo" type="text" fieldId="nome" />
         <Input placeholder="Email" type="text" fieldId="email" />
         <Input placeholder="Confirme o Email" type="text" fieldId="email" />
@@ -70,7 +66,7 @@ const Cadastrar = () => {
           <Input type="submit" value="Cadastrar" />
         </Link>
       </Container>
-    </div>
+
   );
 };
 
