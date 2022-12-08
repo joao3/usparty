@@ -39,7 +39,7 @@ const ItemNoPagamento = (props) => {
           {props.evento.titulo}
         </h2>
 
-        <div className="entradas" style={{ marginTop: "8px" }}>
+        <div className="entradas" style={{ marginTop: "16px" }}>
           <Input
             icon={person}
             placeholder="Nome do Titular *"

@@ -12,6 +12,7 @@ import MeusIngressos from "./pages/MeusIngressos";
 import { Wrapper } from "./components/Wrapper";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Concluido from "./pages/Concluido";
 
 const eventos = [
   {
@@ -170,6 +171,10 @@ let routes = [
     path: "/meusingressos",
     element: Wrapper(<MeusIngressos />),
   },
+  {
+    path: "/concluido",
+    element: Wrapper(<Concluido />)
+  }
 ];
 
 eventos.forEach((evento) => {
