@@ -32,7 +32,7 @@ const Home = (props) => {
       <MenuCategorias />
       <div className="carrosselContainer">
         <h2>Destaques</h2>
-        <Carrossel banners={banners} eventos={props.eventos.slice(0, 3)}/>
+        <Carrossel banners={banners}/>
       </div>
       <CatalogoEventos
         label="Mais Vendidos"

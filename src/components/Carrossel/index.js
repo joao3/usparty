@@ -1,5 +1,5 @@
 import "./style.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import { Link } from "react-router-dom";
@@ -34,7 +34,7 @@ const Carrossel = (props) => {
       <div
         className="left"
         onClick={handleLeftArrow}
-        onKeyDown={(e) => e.key === "Enter" &&  handleLeftArrow(  )}
+        onKeyDown={(e) => e.key === "Enter" &&  handleLeftArrow()}
         tabIndex={0}
         role="button"
         aria-label={"Ir para slide anterior"}
