@@ -51,7 +51,6 @@ const MenuCategorias = () => {
   const [scrollX, setScrollX] = useState(0);
 
   const handleLeftArrow = () => {
-    console.log("oi")
     let x = scrollX + Math.round(window.innerWidth / 2);
     if (x > 0) {
       x = 0;
@@ -71,7 +70,6 @@ const MenuCategorias = () => {
     setScrollX(x);
   };
 
-  console.log(scrollX)
 
   return (
     <div className="MenuCategorias">

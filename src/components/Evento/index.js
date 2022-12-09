@@ -2,8 +2,6 @@ import { Link } from "react-router-dom";
 import "./style.css";
 
 function Evento(props) {
-  console.log(props)
-
   return (
     <div className="evento">
       <Link to={props.evento.path} className="link" style={{ textDecoration: "none" }}>

@@ -145,8 +145,7 @@ const MenuMobileIcon = styled.span`
 const Header = () => {
   let [menuOpen, setMenuOpen] = useState(false);
   let auth = useAuth();
-  console.log(auth, menuOpen);
-
+  
   return (
     <HeaderWrapper>
       <Link aria-label="Ir pra home" id="logo" to="/">USParty</Link>

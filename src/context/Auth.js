@@ -7,7 +7,6 @@ export const AuthProvider = ({ children }) => {
 
   function Login(email) {
     setUser(email);
-    console.log(user);
   }
 
   return (

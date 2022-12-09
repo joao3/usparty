@@ -7,9 +7,6 @@ import { Link } from "react-router-dom";
 const Carrossel = (props) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  console.log(props, props.banners[currentIndex], currentIndex)
-
-
   const handleLeftArrow = () => {
     const newIndex =
       currentIndex === 0 ? props.banners.length - 1 : currentIndex - 1;
