@@ -24,6 +24,11 @@ const Field = styled.input`
   &::before {
     content: "";
   }
+
+  &[type="submit"]:disabled {
+    cursor: default;
+    background: #808080;
+  }
 `;
 
 const Label = styled.label`
@@ -46,6 +51,7 @@ const Input = (props) => {
           type={props.type ? props.type : "text"}
           readOnly={props.readOnly}
           required={props.required}
+          disabled={props.disabled}
         ></Field>
       </>
     );
@@ -61,6 +67,7 @@ const Input = (props) => {
         type={props.type ? props.type : "text"}
         readOnly={props.readOnly}
         required={props.required}
+        disabled={props.disabled}
       ></Field>
     </Wrapper>
   );

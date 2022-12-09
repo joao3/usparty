@@ -126,12 +126,12 @@ const MinhaConta = () => {
             label="CPF:"
           />
           <div className="flex-container-1">
-            <input className="checksize" type="checkbox" id="notificacoes"/>
+            <input className="checksize" type="checkbox" id="notificacoes" checked readOnly/>
             <label className="desejo-receber-notif" htmlFor="notificacoes">
               Desejo receber notificações das nossas ofertas e novidades
             </label>
           </div>
-          <Input type="submit" value="Atualizar Dados" />
+          <Input type="submit" value="Atualizar Dados" disabled/>
         </Container>
       </div>
     </div>
