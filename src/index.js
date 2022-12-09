@@ -136,6 +136,39 @@ const eventos = [
     data_inteira: "Sábado, 18 de Dezembro, às 20h00",
     valor: 80.0,
   },
+  {
+    titulo: "NuBeat edição de 1 ano",
+    imagem: require("./imgs/eventos/evento (15).jpg"),
+    alt: "Banner Festa Nubeat, edição de 1 ano",
+    data: "18 dez",
+    local: "Via Appia - Rodovia Dom Pedro I, 267 - Campinas - SP",
+    path: "/evento-15",
+    data_inteira: "Sexta, 17 de Dezembro, às 20h00",
+    valor: 80.0,
+  },
+  {
+    titulo: "Santa Margarida Zé Neto e Cristiano",
+    imagem: require("./imgs/eventos/evento (16).jpg"),
+    alt: "Banner Santa Margarida Zé Neto e Cristiano",
+    data: "17 dez",
+    local: "Fazenda Santa Margarida - Campinas, SP",
+    path: "/evento-16",
+    data_inteira: "Sábado, 17 de Dezembro, às 20h00",
+    valor: 80.0,
+  },
+  {
+    titulo: "Bateu a Nave terceira edição",
+    imagem: require("./imgs/eventos/evento (17).jpg"),
+    alt: "Banner Bateu a Nave terceira edição",
+    data: "19 nov",
+    local: "Santa Lua Eventos - Leme, SP",
+    path: "/evento-17",
+    data_inteira: "Sábado, 19 de Novembro, às 20h00",
+    valor: 80.0,
+  },
+
+
+
 ];
 
 let routes = [

@@ -46,9 +46,9 @@ const Container = styled.form`
   }
 `;
 const Container2 = styled.form`
-  max-width: 600px;
-  margin: 0 auto;
-
+  max-width: 350px;
+  min-width: 250px;
+  justify-content: center;
   input[type="profileoption"] {
     text-align: center;
     padding: 20px;
@@ -63,7 +63,7 @@ const Container2 = styled.form`
     border-color: transparent;
     color: white;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.5rem;
     cursor: pointer;
     opacity: 0.6;
     pointer-events: none;
