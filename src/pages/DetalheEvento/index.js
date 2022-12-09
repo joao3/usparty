@@ -43,7 +43,7 @@ const DetalheEvento = (props) => {
       <div className="DetalheEvento">
         <div className="up">
           <div id="imgContainer">
-            <img src={props.evento.imagem} alt={props.evento.alt_imagem}></img>
+            <img src={props.evento.imagem} alt={props.evento.alt}></img>
           </div>
   
           <div>
@@ -153,9 +153,9 @@ const DetalheEvento = (props) => {
   
           <p>
             <strong>
-              * OBRIGATÓRIA A APRESENTAÇÃO DE COMPROVANTE DE VACINAÇÃO CONTRA A
-              COVID-19, COMO MEDIDA DE INTERESSE SANITÁRIO, ESTABELECIDA PELO
-              DECRETO RIO Nº 49894 DE 1º DE DEZEMBRO DE 2021.
+              * obrigatória a apresentação de comprovante de vacinação contra a
+              covid-19, como medida de interesse sanitário, estabelecida pelo
+              decreto rio nº 49894 de 1º de dezembro de 2021.
             </strong>
           </p>
         </div>

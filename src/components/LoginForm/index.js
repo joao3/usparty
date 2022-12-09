@@ -61,6 +61,7 @@ const LoginForm = (props) => {
         type="text"
         fieldId="login-name"
         label="Email"
+        required
       />
       <Input
         icon={lock}
@@ -68,6 +69,7 @@ const LoginForm = (props) => {
         type="password"
         fieldId="login-password"
         label="Senha"
+        required
       />
       <Input type="submit" value="Enviar" />
 

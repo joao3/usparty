@@ -43,6 +43,8 @@ const Input = (props) => {
           placeholder={props.placeholder}
           id={props.fieldId}
           type={props.type ? props.type : "text"}
+          readOnly={props.readOnly}
+          required={props.required}
         ></Field>
       </>
     );
@@ -56,6 +58,8 @@ const Input = (props) => {
         placeholder={props.placeholder}
         id={props.fieldId}
         type={props.type ? props.type : "text"}
+        readOnly={props.readOnly}
+        required={props.required}
       ></Field>
     </Wrapper>
   );

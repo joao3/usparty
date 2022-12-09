@@ -82,40 +82,44 @@ const MinhaConta = () => {
           <img className="perfil" src={perfil} />
           <Container2>
             <Link to="/minhaconta">
-              <Input type="profileoption" value="Dados pessoais" />
+              <Input readOnly type="profileoption" value="Dados pessoais" />
             </Link>
             <Link to="/minhaconta">
-            <Input type="profileoption" value="Meus Cartões" />
+            <Input readOnly type="profileoption" value="Meus Cartões" />
             </Link>
             <Link to="/minhaconta">
-              <Input type="profileoption" value="Meus ingressos" />
+              <Input readOnly type="profileoption" value="Meus ingressos" />
             </Link>
             <Link to="/minhaconta">
-            <Input type="profileoption" value="Alterar Senha" />
+            <Input readOnly type="profileoption" value="Alterar Senha" />
             </Link>
           </Container2>
         </div>
         <Container>
           <span className="editar-perfil">Editar Perfil</span> <br />
           <Input
+            readOnly
             defaultValue="José Augusto"
             type="text"
             fieldId="name"
             label="Nome:"
           />
           <Input
+            readOnly
             defaultValue="(16)98888-7777"
             type="text"
             fieldId="telefone"
             label="Telefone:"
           />
           <Input
+            readOnly
             defaultValue="joseaugusto@email.com"
             type="text"
             fieldId="email"
             label="Email:"
           />
           <Input
+            readOnly
             defaultValue="123.456.789-09"
             type="text"
             fieldId="cpf"
