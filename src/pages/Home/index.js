@@ -3,20 +3,27 @@ import CatalogoEventos from "../../components/CatalogoEventos";
 import MenuCategorias from "../../components/MenuCategorias";
 import Carrossel from "../../components/Carrossel";
 import { Container } from "../../components/Container";
+import image from "../../imgs/eventos/evento (2).jpg"
 
 const Home = (props) => {
   const banners = [
     {
       imagem: require("../../imgs/banner.jpg"),
-      nome: "1",
+      alt: "Banner NuBeat edição de 1 ano 17 de dezembro",
+      path: "/evento-0",
+      nome: "NuBeat edição de 1 ano",
     },
     {
       imagem: require("../../imgs/banner2.jpg"),
-      nome: "2",
+      alt: "Banner Santa Margarida Zé Neto e Cristiano 17 de dezembro",
+      path: "/evento-1",    
+      nome: " Santa Margarida Zé Neto e Cristiano",
     },
     {
       imagem: require("../../imgs/banner3.jpg"),
-      nome: "3",
+      alt: "Banner Bateu a Nave terceira edição 19 de novembro",
+      path: "/evento-2",
+      nome: "Bateu a Nave terceira edição",
     },
   ];
 
@@ -25,7 +32,7 @@ const Home = (props) => {
       <MenuCategorias />
       <div className="carrosselContainer">
         <h2>Destaques</h2>
-        <Carrossel banners={banners} />
+        <Carrossel banners={banners}/>
       </div>
       <CatalogoEventos
         label="Mais Vendidos"

@@ -39,31 +39,34 @@ const MenuWrapper = styled.div`
   filter: none;
   width: auto;
   display: block;
-  min-width: 228px;
+  min-width: 192px;
+
+  a {
+    display: inline-block;  
+  }
 
   @media (max-width: 767px) {
     position: absolute;
     top: 70px;
     left: 0;
-    max-height: 0;
     overflow: hidden;
     background-color: #820ad1;
     filter: drop-shadow(0px 7.07px 7.07px #00000050);
     width: 100%;
     box-sizing: border-box;
-    display: flex;
     justify-content: space-between;
     align-items: center;
+    display: none;
 
     &.open {
-      max-height: 80px;
-      padding: 8px 32px;
+      display: flex;
+        padding: 8px 32px;
     }
   }
 `;
 
 const MenuMobileButton = styled.span`
-  display: block;
+  display: block; 
   cursor: pointer;
   width: 30px;
   height: 30px;
@@ -78,9 +81,9 @@ const Icon = styled.span`
   display: inline-block;
   width: 56px;
   height: 56px;
-  margin: 0 10px;
   position: relative;
   cursor: pointer;
+  margin: 0 4px;
 
   svg {
     position: absolute;
@@ -142,11 +145,10 @@ const MenuMobileIcon = styled.span`
 const Header = () => {
   let [menuOpen, setMenuOpen] = useState(false);
   let auth = useAuth();
-  console.log(auth, menuOpen);
-
+  
   return (
     <HeaderWrapper>
-      <Link id="logo" to="/">USParty</Link>
+      <Link aria-label="Ir pra home" id="logo" to="/">USParty</Link>
 
       <div id="searchBar">
         <input placeholder="Procure um evento" />
@@ -155,13 +157,15 @@ const Header = () => {
 
       <MenuMobileButton
         tabIndex={0}
-        aria-labelledby="Abrir menu"
+        aria-label={menuOpen? "Fechar menu" : "Abrir menu"}
+        role="button"
         onClick={() => setMenuOpen(!menuOpen)}
+        onKeyDown={(e) => e.key === "Enter" && setMenuOpen(!menuOpen)}
       >
         <MenuMobileIcon className={menuOpen && "open"} />
       </MenuMobileButton>
       <MenuWrapper className={menuOpen && "open"} id="actions">
-        <Icon tabIndex={0} aria-labelledby="Opções de Acessibilidade">
+        <Icon tabIndex={0} aria-label="Opções de Acessibilidade">
           <AccessibilityNewRoundedIcon className="icon accessibilityIcon" />
         </Icon>
         <Link to="/carrinho">

@@ -3,16 +3,16 @@ import "./style.css";
 
 function Evento(props) {
   return (
-    <div className="Evento">
-      <Link to={props.evento.path} id="link" style={{ textDecoration: "none" }}>
+    <div className="evento">
+      <Link to={props.evento.path} className="link" style={{ textDecoration: "none" }}>
         <img src={props.evento.imagem} alt={props.evento.alt}></img>
 
         <div className="info">
-          <h2 id="data">{props.evento.data}</h2>
+          <span className="data">{props.evento.data}</span>
 
-          <h1 id="titulo">{props.evento.titulo}</h1>
+          <h3 className="titulo">{props.evento.titulo}</h3>
 
-          <h2 id="local">{props.evento.local}</h2>
+          <span className="local">{props.evento.local}</span>
         </div>
       </Link>
     </div>

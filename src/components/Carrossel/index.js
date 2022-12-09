@@ -1,7 +1,8 @@
 import "./style.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import { Link } from "react-router-dom";
 
 const Carrossel = (props) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -33,6 +34,10 @@ const Carrossel = (props) => {
       <div
         className="left"
         onClick={handleLeftArrow}
+        onKeyDown={(e) => e.key === "Enter" &&  handleLeftArrow()}
+        tabIndex={0}
+        role="button"
+        aria-label={"Ir para slide anterior"}
         style={{
           position: "absolute",
           top: "50%",
@@ -48,10 +53,27 @@ const Carrossel = (props) => {
       >
         <NavigateBeforeIcon className="arrow" style={{ fontSize: 50 }} />
       </div>
-
+      <Link
+        to={props.banners[currentIndex].path}
+        aria-label={props.banners[currentIndex].alt}
+        style={{
+          width: "100%",  
+          height: "100%",
+          borderRadius: "16pt",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          display: "inline-block",
+          backgroundImage: `url(${props.banners[currentIndex].imagem})`,
+        }}
+      >
+      </Link> 
       <div
         className="right"
         onClick={handleRightArrow}
+        onKeyDown={(e) => e.key === "Enter" &&  handleRightArrow()}
+        tabIndex={0}
+        role="button"
+        aria-label={"Ir para slide seguinte"}
         style={{
           position: "absolute",
           top: "50%",
@@ -69,17 +91,6 @@ const Carrossel = (props) => {
       </div>
       <div
         style={{
-          width: "100%",
-          height: "100%",
-          borderRadius: "16pt",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundImage: `url(${props.banners[currentIndex].imagem})`,
-        }}
-      ></div>
-
-      <div
-        style={{
           display: "flex",
           justifyContent: "center",
         }}
@@ -88,6 +99,10 @@ const Carrossel = (props) => {
           return slideIndex === currentIndex ? (
             <div
               onClick={() => goToSlide(slideIndex)}
+              onKeyDown={(e) => e.key === "Enter" &&  goToSlide(slideIndex)}
+              tabIndex={0}
+              role="button"
+              aria-label={"Ir para slide " + (slideIndex+1)}
               key={slideIndex}
               style={{
                 color: "#820AD1",
@@ -101,6 +116,10 @@ const Carrossel = (props) => {
           ) : (
             <div
               onClick={() => goToSlide(slideIndex)}
+              onKeyDown={(e) => e.key === "Enter" &&  goToSlide(slideIndex)}
+              tabIndex={0}  
+              role="button"
+              aria-label={"Ir para slide " + (slideIndex+1)}          
               key={slideIndex}
               style={{
                 color: "#A9A9A9",

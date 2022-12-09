@@ -23,6 +23,12 @@ header > #searchBar > input {
   border-radius: 15px;
 }
 
+@media (max-width: 1000px) {
+  header > #searchBar > input {
+    width: 34vw;
+  }
+}
+
 header > #searchBar > .searchIcon {
   position: absolute;
   font-size: 30pt;

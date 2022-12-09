@@ -50,24 +50,23 @@ const Cadastrar = () => {
 
       <Container>
         <h1 className="criar_conta">Criar conta</h1>
-        <Input placeholder="Nome Completo" type="text" fieldId="nome" />
-        <Input placeholder="Email" type="text" fieldId="email" />
-        <Input placeholder="Confirme o Email" type="text" fieldId="email" />
-        <Input placeholder="CPF" type="text" fieldId="cpf" />
-        <Input placeholder="Telefone" type="text" fieldId="telefone" />
-        <Input placeholder="Senha" type="text" fieldId="senha" />
-        <Input placeholder="Confirme a Senha" type="text" fieldId="senha" />
+        <Input placeholder="Nome Completo" type="text" fieldId="nome" required/>
+        <Input placeholder="Email" type="text" fieldId="email" required/>
+        <Input placeholder="Confirme o Email" type="text" fieldId="email" required/>
+        <Input placeholder="CPF" type="text" fieldId="cpf" required/>
+        <Input placeholder="Telefone" type="text" fieldId="telefone" required/>
+        <Input placeholder="Senha" type="text" fieldId="senha" required/>
+        <Input placeholder="Confirme a Senha" type="text" fieldId="senha" required/>
         <div className="flex-container-1">
-          <input className="checksize" type="checkbox" />
-          <span className="termos">Eu li e concordo com os </span>
-          <a href="/">termos de uso.</a>
+          <input className="checksize" type="checkbox" id="termosCheckbox"/>
+          <label htmlFor="termosCheckbox" className="termos">Eu li e concordo com os <Link>termos de uso.</Link></label>
         </div>
         <Link to="/minhaconta">
           <Input type="submit" value="Cadastrar" />
         </Link>
       </Container>
 
-  );
+  );  
 };
 
 export default Cadastrar;

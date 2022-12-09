@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Box = styled.div`
   padding: 80px 60px;
@@ -14,12 +15,17 @@ export const Box = styled.div`
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: column;
-  flex-warp: wrap;
-  justify-content: center;
-  max-width: 1000px;
-  width: 52vw;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  padding: 0 64px;
   margin: 0 auto;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 export const Column = styled.div`
@@ -31,12 +37,10 @@ export const Column = styled.div`
 `;
 
 export const Row = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
-  grid-gap: 20px;
+  display: flex;
 
-  @media (max-width: 1000px) {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  @media (max-width: 767px) {
+    flex-direction: column;
   }
 `;
 
@@ -52,7 +56,14 @@ export const FooterLink = styled.a`
   }
 `;
 
-export const Heading = styled.p`
+export const Logo = styled(Link)`
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 16px;
+`;
+
+export const Heading = styled.h3`
   font-size: 24px;
   color: #fff;
   margin-bottom: 40px;
