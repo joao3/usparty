@@ -39,11 +39,10 @@ const MenuWrapper = styled.div`
   filter: none;
   width: auto;
   display: block;
-  min-width: 228px;
+  min-width: 192px;
 
   a {
     display: inline-block;  
-    margin: 0 10px;
   }
 
   @media (max-width: 767px) {
@@ -84,6 +83,7 @@ const Icon = styled.span`
   height: 56px;
   position: relative;
   cursor: pointer;
+  margin: 0 4px;
 
   svg {
     position: absolute;

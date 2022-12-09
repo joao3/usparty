@@ -7,33 +7,25 @@ import {
   Column,
   FooterLink,
   Heading,
+  Logo,
 } from "./FooterStyles";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <Box className="footerbox">
       <Container>
+        <Logo
+          aria-label="Ir pra home"
+          className="bio-rhyme"
+        >
+          USParty
+        </Logo>
         <Row>
-          <Column style={{ marginBottom: "16px" }}>
-            <Link
-              aria-label="Ir pra home"
-              className="bio-rhyme"
-              style={{
-                color: "white",
-                fontSize: "30pt",
-                textDecoration: "none",
-              }}
-            >
-              USParty
-            </Link>
-          </Column>
           <Column>
             <Heading>Sobre nós</Heading>
             <FooterLink href="#">Quem somos</FooterLink>
             <FooterLink href="#">Politica de privacidade</FooterLink>
           </Column>
-
           <Column>
             <Heading>Suporte</Heading>
             <FooterLink href="#">Fale Conosco</FooterLink>
