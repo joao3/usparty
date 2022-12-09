@@ -70,6 +70,7 @@ const MenuCategorias = () => {
     setScrollX(x);
   };
 
+  console.log(scrollX)
 
   return (
     <div className="MenuCategorias">
@@ -78,7 +79,7 @@ const MenuCategorias = () => {
         <NavigateBeforeIcon className="arrow" style={{ fontSize: 50 }} />
       </div>
 
-      <div className={scrollX === 0? "right disabled" : "right  "} onClick={handleRightArrow}>
+      <div className={scrollX <= -1100? "right disabled" : "right  "} onClick={handleRightArrow}>
         <NavigateNextIcon className="arrow" style={{ fontSize: 50 }} />
       </div>
 

@@ -20,11 +20,11 @@
 }
 
 .Carrossel .left {
-  left: -5%;
+  left: -35px;
 }
 
 .Carrossel .right {
-  right: -5%;
+  right: -35px;
 }
 
 .Carrossel .arrow {

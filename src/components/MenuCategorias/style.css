@@ -40,6 +40,12 @@
   transition: all ease 0.5s;
 } 
 
+.MenuCategorias .right.disabled,
+.MenuCategorias .left.disabled {
+  cursor: default;
+  opacity: 0.5;
+} 
+
 .MenuCategorias .left {
   left: -35px;
 }
