@@ -4,7 +4,7 @@ import Evento from "../Evento";
 
 const CatalogoEventos = (props) => {
   return (
-    <section className="CatalogoEventos">
+    <section className="CatalogoEventos" id='CatalogoEventos'>
       <h2>{props.label}</h2>
 
       <div className="cards">

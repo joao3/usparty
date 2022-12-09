@@ -12,6 +12,9 @@ function SimpleBreadcrumbs() {
   const location = useLocation();
   const pathnames = location.pathname.split("/").filter((x) => x);
   console.log({ location, pathnames });
+  const formatToTitle = (value) => {
+    return value.toLocaleLowerCase()[0].toUpperCase() + value.slice(1);
+  };
   return (
     <Container sx={{ml: "10px"}}>
       <Box sx={{ml: "20px", mt: "20px"}}>
@@ -23,14 +26,16 @@ function SimpleBreadcrumbs() {
           {pathnames.map((value, index) => {
             const last = index === pathnames.length - 1;
             const to = `/${pathnames.slice(0, index + 1).join("/")}`;
-            const formatedValue = value.toLocaleLowerCase()[0].toUpperCase() + value.slice(1)
+            const formatedValue = formatToTitle(value);
+
+            console.log({to});
 
             return last ? (
               <Typography color="textPrimary" key={to}>
                 {formatedValue}
               </Typography>
             ) : (
-              <Link color="inherit" to={to} key={to}>
+              <Link color="inherit" to={to === '/evento' ? '/#CatalogoEventos' : to} key={to}>
                 {formatedValue}
               </Link>
             );
