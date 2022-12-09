@@ -11,8 +11,15 @@ import Cadastrar from "./pages/Cadastrar";
 import MeusIngressos from "./pages/MeusIngressos";
 import { Wrapper } from "./components/Wrapper";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Link,
+  Route,
+  RouterProvider,
+  useLocation,
+} from "react-router-dom";
 import Concluido from "./pages/Concluido";
+import { Breadcrumbs, Typography } from "@mui/material";
 
 const eventos = [
   {
@@ -166,11 +173,7 @@ const eventos = [
     data_inteira: "Sábado, 19 de Novembro, às 20h00",
     valor: 80.0,
   },
-
-
-
 ];
-
 let routes = [
   {
     path: "/",
@@ -202,8 +205,8 @@ let routes = [
   },
   {
     path: "/concluido",
-    element: Wrapper(<Concluido />)
-  }
+    element: Wrapper(<Concluido />),
+  },
 ];
 
 eventos.forEach((evento) => {
@@ -225,7 +228,7 @@ root.render(
 
 //-------------Vlibras--------------------
 let CreateDOMObjects = () => {
-    const DOM = `
+  const DOM = `
         <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
@@ -233,22 +236,22 @@ let CreateDOMObjects = () => {
         </div>
         </div>
     `;
-    document.body.insertAdjacentHTML('beforeend', DOM);
-}
+  document.body.insertAdjacentHTML("beforeend", DOM);
+};
 
 let ImportScriptFile = () => {
-    let script = document.createElement('script');
-    script.src = 'https://vlibras.gov.br/app/vlibras-plugin.js';
-    script.onload = () => {
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-    };
-    document.head.appendChild(script)
-}
+  let script = document.createElement("script");
+  script.src = "https://vlibras.gov.br/app/vlibras-plugin.js";
+  script.onload = () => {
+    new window.VLibras.Widget("https://vlibras.gov.br/app");
+  };
+  document.head.appendChild(script);
+};
 
 (() => {
-    window.addEventListener('DOMContentLoaded', e => {
-        CreateDOMObjects();
-        ImportScriptFile();
-    });
+  window.addEventListener("DOMContentLoaded", (e) => {
+    CreateDOMObjects();
+    ImportScriptFile();
+  });
 })();
 //-----------------------------------------------
