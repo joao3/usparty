@@ -60,7 +60,7 @@ const Cadastrar = () => {
         <div className="flex-container-1">
           <input className="checksize" type="checkbox" />
           <span className="termos">Eu li e concordo com os </span>
-          <a href="/">termos de uso.</a>
+          <Link>termos de uso.</Link>
         </div>
         <Link to="/minhaconta">
           <Input type="submit" value="Cadastrar" />

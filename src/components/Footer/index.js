@@ -8,6 +8,7 @@ import {
   FooterLink,
   Heading,
 } from "./FooterStyles";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -15,19 +16,17 @@ const Footer = () => {
       <Container>
         <Row>
           <Column style={{ marginBottom: "16px" }}>
-            <div id="logo">
-              <a
-                style={{
-                  color: "white",
-                  fontSize: "30pt",
-                  fontFamily: "BioRhyme",
-                  textDecoration: "none",
-                }}
-                href="/"
-              >
-                USParty
-              </a>
-            </div>
+            <Link
+              aria-label="Ir pra home"
+              className="bio-rhyme"
+              style={{
+                color: "white",
+                fontSize: "30pt",
+                textDecoration: "none",
+              }}
+            >
+              USParty
+            </Link>
           </Column>
           <Column>
             <Heading>Sobre nós</Heading>

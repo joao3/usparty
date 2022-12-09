@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
 .listArea {
-  margin-top: 64px;
+  margin-top: 20px;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -9,7 +9,14 @@
   overflow-x: hidden;
 }
 
+@media (max-width: 768px) {
+  .listArea {   
+    overflow-x: auto;
+  }
+}
+
 .MenuCategorias {
+  margin-top: 20px;
   max-width: 1000px;
   width: 80.5vw;
   position: relative;
@@ -17,10 +24,12 @@
   margin-right: auto;
 }
 
+
+
 .MenuCategorias .right,
 .MenuCategorias .left {
   position: absolute;
-  top: 50%;
+  top: calc(50% + 30px);
   transform: translateY(-50%);
   z-index: 99;
   display: flex;
@@ -29,14 +38,14 @@
   overflow: hidden;
   cursor: pointer;
   transition: all ease 0.5s;
-}
+} 
 
 .MenuCategorias .left {
-  left: 0;
+  left: -35px;
 }
 
 .MenuCategorias .right {
-  right: 0;
+  right: -35px;
 }
 
 .MenuCategorias .arrow {

@@ -30,7 +30,7 @@ const Container = styled.form`
   }
 `;
 
-const To_create_acount = styled.form`
+const To_create_acount = styled.div`
   font-size: 2rem;
 `;
 

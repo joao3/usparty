@@ -8,14 +8,20 @@ const Home = (props) => {
   const banners = [
     {
       imagem: require("../../imgs/banner.jpg"),
+      alt: "Banner NuBeat edição de 1 ano 17 de dezembro",
+      link: "/detalheevento",
       nome: "1",
     },
     {
       imagem: require("../../imgs/banner2.jpg"),
+      alt: "Banner Santa Margarida Zé Neto e Cristiano 17 de dezembro",
+      link: "/detalheevento",
       nome: "2",
     },
     {
       imagem: require("../../imgs/banner3.jpg"),
+      alt: "Banner Bateu a Nave terceira edição 19 de novembro",
+      link: "/detalheevento",
       nome: "3",
     },
   ];
