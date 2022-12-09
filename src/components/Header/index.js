@@ -6,13 +6,14 @@ import AccessibilityNewRoundedIcon from "@mui/icons-material/AccessibilityNewRou
 import LocalGroceryStoreOutlinedIcon from "@mui/icons-material/LocalGroceryStoreOutlined";
 import AccountIcon from "@mui/icons-material/Person";
 import LoginIcon from "@mui/icons-material/Login";
+import MenuAcessibilidade from "../MenuAcessibilidade";
 import { useAuth } from "../../context/Auth";
 import { useState } from "react";
 
 const HeaderWrapper = styled.header`
   position: fixed;
   top: 0;
-  background-color: #820ad1;
+  background-color: var(--main-purple);
   width: 100%;
   box-sizing: border-box;
   min-height: 120px;
@@ -50,7 +51,7 @@ const MenuWrapper = styled.div`
     top: 70px;
     left: 0;
     overflow: hidden;
-    background-color: #820ad1;
+    background-color: var(--main-purple);
     filter: drop-shadow(0px 7.07px 7.07px #00000050);
     width: 100%;
     box-sizing: border-box;
@@ -89,7 +90,7 @@ const Icon = styled.span`
     position: absolute;
     top: 8px;
     left: 8px;
-    fill: #820ad1;
+    fill: var(--main-purple);
     width: 40px;
     height: 40px;
   }
@@ -144,6 +145,8 @@ const MenuMobileIcon = styled.span`
 
 const Header = () => {
   let [menuOpen, setMenuOpen] = useState(false);
+  let [accessibilityOpen, setAccessibilityOpen] = useState(false);
+
   let auth = useAuth();
   
   return (
@@ -165,9 +168,14 @@ const Header = () => {
         <MenuMobileIcon className={menuOpen && "open"} />
       </MenuMobileButton>
       <MenuWrapper className={menuOpen && "open"} id="actions">
-        <Icon tabIndex={0} aria-label="Opções de Acessibilidade">
+        <Icon 
+          tabIndex={0}
+          aria-label="Opções de Acessibilidade" role="button"
+          onClick={() => setAccessibilityOpen(!accessibilityOpen)}
+          onKeyDown={(e) => e.key === "Enter" && setAccessibilityOpen(!accessibilityOpen)}>
           <AccessibilityNewRoundedIcon className="icon accessibilityIcon" />
         </Icon>
+        {accessibilityOpen && <MenuAcessibilidade />}
         <Link to="/carrinho">
           <Icon>
             <LocalGroceryStoreOutlinedIcon className="icon carrinho" />
@@ -188,7 +196,7 @@ const Header = () => {
         )}
       </MenuWrapper>
     </HeaderWrapper>
-  );
+  );  
 };
 
 export default Header;

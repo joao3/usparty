@@ -41,7 +41,7 @@ const Container = styled.form`
     border-color: transparent;
     color: white;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2rem;
     cursor: pointer;
   }
 `;
@@ -63,7 +63,7 @@ const Container2 = styled.form`
     border-color: transparent;
     color: white;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2rem;
     cursor: pointer;
     opacity: 0.6;
     pointer-events: none;
@@ -77,9 +77,9 @@ const MinhaConta = () => {
   return (
     <div className="MinhaConta">
       <div className="frame">
-        <div className="botoes_nome_foto">
+        <div className="botoes_nome_foto">  
           <span className="nome_usuario">Olá, José Augusto</span>
-          <img className="perfil" src={perfil} />
+          <img className="perfil" src={perfil} alt="Foto de perfil"/>
           <Container2>
             <Link to="/minhaconta">
               <Input readOnly type="profileoption" value="Dados pessoais" />
@@ -126,10 +126,10 @@ const MinhaConta = () => {
             label="CPF:"
           />
           <div className="flex-container-1">
-            <input className="checksize" type="checkbox" />
-            <span className="desejo-receber-notif">
+            <input className="checksize" type="checkbox" id="notificacoes"/>
+            <label className="desejo-receber-notif" htmlFor="notificacoes">
               Desejo receber notificações das nossas ofertas e novidades
-            </span>
+            </label>
           </div>
           <Input type="submit" value="Atualizar Dados" />
         </Container>

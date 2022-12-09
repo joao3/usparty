@@ -5,8 +5,7 @@ header > #logo {
   display: inline-block;
   font-family: BioRhyme;
   color: white;
-  font-size: 30pt;
-  vertical-align: auto;
+  font-size: 40px;
 }
 
 header > #searchBar {
@@ -21,6 +20,7 @@ header > #searchBar > input {
   height: 51px;
   padding-left: 20px;
   border-radius: 15px;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 1000px) {
@@ -40,5 +40,4 @@ header > #searchBar > .searchIcon {
 header > #searchBar > ::placeholder {
   font-family: roboto;
   color: #7a7a7a;
-  font-size: 18pt;
 }

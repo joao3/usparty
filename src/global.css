@@ -3,6 +3,17 @@
 html {
   font-family: roboto;
   font-size: 16px;
+  --main-purple: #820AD1;
+  --dark-purple: #581485;
+}
+
+html.increased {
+  font-size: 20px;
+}
+
+html.contrast {
+  --main-purple: #340454;
+  --dark-purple: #230835;
 }
 
 h2 {

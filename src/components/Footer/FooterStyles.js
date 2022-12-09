@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Box = styled.div`
   padding: 80px 60px;
-  background: #581485;
+  background: var(--dark-purple);
   position: absolute;
   bottom: 1;
   width: 100%;
@@ -47,7 +47,7 @@ export const Row = styled.div`
 export const FooterLink = styled.a`
   color: #fff;
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 1.125rem;
   text-decoration: none;
 
   &:hover {
@@ -64,7 +64,7 @@ export const Logo = styled(Link)`
 `;
 
 export const Heading = styled.h3`
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #fff;
   margin-bottom: 40px;
   font-weight: bold;

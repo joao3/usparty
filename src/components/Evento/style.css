@@ -28,7 +28,7 @@
 .evento .data {
   display: inline-block;
   margin-top: 21px;
-  color: #820ad1;
+  color: var(--main-purple);
   font-size: 1.125rem;
 }
 

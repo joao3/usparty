@@ -16,6 +16,7 @@ const Container = styled.div`
 `;
 
 const Pagamento = () => {
+  const [pagamento, setPagamento] = useState(null)
   const [carrinho, setCarrinho] = useState(
     JSON.parse(localStorage.getItem("carrinho"))
   );
@@ -71,25 +72,25 @@ const Pagamento = () => {
 
               <div className="content">
                 <div className="radioPagamento">
-                  <input type="radio" id="pix" name="formaPagamento"></input>
-                  <input type="radio" id="boleto" name="formaPagamento"></input>
-                  <input type="radio" id="cartao" name="formaPagamento"></input>
+                  <input checked={pagamento === "pix"} onChange={() => setPagamento("pix")} type="radio" id="pix" value="pix" name="formaPagamento"></input>
+                  <input checked={pagamento === "boleto"} onChange={() => setPagamento("boleto")} type="radio" id="boleto" value="boleto" name="formaPagamento"></input>
+                  <input checked={pagamento === "cartao"} onChange={() => setPagamento("cartao")} type="radio" id="cartao" value="cartao" name="formaPagamento"></input>
 
-                  <label htmlFor="pix" className="box first">
+                  <label tabIndex={0} htmlFor="pix" className="box first" onKeyDown={(e) => e.key === "Enter" && setPagamento("pix")}>
                     <div className="metodoText">
                       <span className="circle"></span>
                       <PixIcon style={{ "marginRight": "8px" }} />
                       <span className="text">Pix</span>
                     </div>
                   </label>
-                  <label htmlFor="boleto" className="box second">
+                  <label tabIndex={0} htmlFor="boleto" className="box second" onKeyDown={(e) => e.key === "Enter" && setPagamento("boleto")}>
                     <div className="metodoText">
                       <span className="circle"></span>
                       <ReceiptLongIcon style={{ "marginRight": "8px" }} />
                       <span className="text">Boleto</span>
-                    </div>
+                    </div>  
                   </label>
-                  <label htmlFor="cartao" className="box third">
+                  <label tabIndex={0} htmlFor="cartao" className="box third" onKeyDown={(e) => e.key === "Enter" && setPagamento("cartao")}>  
                     <div className="metodoText">
                       <span className="circle"></span>
                       <CreditCardIcon style={{ "marginRight": "8px" }} />

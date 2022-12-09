@@ -14,8 +14,8 @@ const Wrapper = styled.div`
 
 const Field = styled.input`
   width: 100%;
-  font-size: 20px;
-  min-height: 60px;
+  font-size: 1.25rem;
+  min-height: ${props => props.type !== "checkbox" ? "60px" : "auto"};
   padding-left: 72px;
   margin-bottom: 16px;
   border: 2px solid #000000;
@@ -27,16 +27,17 @@ const Field = styled.input`
 `;
 
 const Label = styled.label`
-  font-size: 20px;
+  font-size: 1.25rem;
   padding-left: 16px;
   margin-bottom: 2px;
+  cursor : ${props => props.click ? "pointer" : "default"};
 `;
 
 const Input = (props) => {
   if (!props.icon) {
     return (
       <>
-        {props.label && <Label htmlFor={props.fieldId}>{props.label}</Label>}
+        {props.label && <Label click={props.type === "checkbox"} htmlFor={props.fieldId}>{props.label}</Label>}
         <Field
           value={props.value}
           defaultValue={props.defaultValue}

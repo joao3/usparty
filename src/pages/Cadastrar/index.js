@@ -41,7 +41,7 @@ const Container = styled.form`
     border-color: transparent;
     color: white;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2rem;
     cursor: pointer;
   }
 `;

@@ -105,7 +105,7 @@ const Carrossel = (props) => {
               aria-label={"Ir para slide " + (slideIndex+1)}
               key={slideIndex}
               style={{
-                color: "#820AD1",
+                color: "var(--main-purple)",
                 margin: "0 3px",
                 cursor: "pointer",
                 fontSize: "20px",
