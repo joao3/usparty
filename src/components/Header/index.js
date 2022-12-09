@@ -50,7 +50,6 @@ const MenuWrapper = styled.div`
     position: absolute;
     top: 70px;
     left: 0;
-    overflow: hidden;
     background-color: var(--main-purple);
     filter: drop-shadow(0px 7.07px 7.07px #00000050);
     width: 100%;

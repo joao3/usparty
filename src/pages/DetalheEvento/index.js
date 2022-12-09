@@ -50,7 +50,7 @@ const DetalheEvento = (props) => {
             <h1
               style={{
                 maxWidth: "385px",
-                fontSize: "26pt",
+                fontSize: "2rem",
                 fontWeight: "normal",
               }}
             >
@@ -61,7 +61,7 @@ const DetalheEvento = (props) => {
               style={{
                 maxWidth: "500px",
                 marginTop: "16px",
-                fontSize: "14pt",
+                fontSize: "1.125rem",
                 fontWeight: "normal",
               }}
             >
@@ -72,7 +72,7 @@ const DetalheEvento = (props) => {
               style={{
                 maxWidth: "500px",
                 marginTop: "16px",
-                fontSize: "14pt",
+                fontSize: "1.125rem",
                 fontWeight: "normal",
               }}
             >
@@ -108,7 +108,7 @@ const DetalheEvento = (props) => {
         </div>
   
         <div id="descricao">
-          <h2 style={{ fontSize: "24pt" }}>Descrição do Evento</h2>
+          <h2>Descrição do Evento</h2>
           <p>
             Se você acha que já riu de tudo, vai se surpreender com Rafael
             Portugal. O ator do Porta dos Fundos apresenta no seu espetáculo

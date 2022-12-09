@@ -44,14 +44,14 @@ export const Row = styled.div`
   }
 `;
 
-export const FooterLink = styled.a`
+export const FooterLink = styled(Link)`
   color: #fff;
   margin-bottom: 20px;
   font-size: 1.125rem;
   text-decoration: none;
 
   &:hover {
-    color: black;
+    color: #e6cef6;
     transition: 200ms ease-in;
   }
 `;

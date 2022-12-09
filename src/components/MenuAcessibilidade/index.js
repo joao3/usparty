@@ -13,8 +13,18 @@ const Wrapper = styled.div`
     box-sizing: border-box;
     padding: 8px 16px;
     min-height: 120px;
-    border-radius: 16px;
+    border-radius: 0 0 16px 16px;
     text-align: center;
+    z-index: 100;
+
+    @media (max-width: 767px) {
+        top: 70px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 `;
 
 const Button = styled.label`
