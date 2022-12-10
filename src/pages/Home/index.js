@@ -10,19 +10,19 @@ const Home = (props) => {
     {
       imagem: require("../../imgs/banner.jpg"),
       alt: "Banner NuBeat edição de 1 ano 17 de dezembro",
-      path: "/evento-15",
+      path: "/evento/15",
       nome: "NuBeat edição de 1 ano",
     },
     {
       imagem: require("../../imgs/banner2.jpg"),
       alt: "Banner Santa Margarida Zé Neto e Cristiano 17 de dezembro",
-      path: "/evento-16",    
+      path: "/evento/16",    
       nome: " Santa Margarida Zé Neto e Cristiano",
     },
     {
       imagem: require("../../imgs/banner3.jpg"),
       alt: "Banner Bateu a Nave terceira edição 19 de novembro",
-      path: "/evento-17",
+      path: "/evento/17",
       nome: "Bateu a Nave terceira edição",
     },
   ];
