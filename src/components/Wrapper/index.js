@@ -17,7 +17,7 @@ function SimpleBreadcrumbs() {
   };
   return (
     <Container sx={{ml: "10px"}}>
-      <Box sx={{ml: "20px", mt: "20px"}}>
+      <Box sx={{ml: "20px", mt: "20px", mb: "-100px"}}>
         <Breadcrumbs aria-label="Breadcrumb"
         separator={<NavigateNextIcon fontSize="small" />}>
           <Link color="inherit" to="/">
